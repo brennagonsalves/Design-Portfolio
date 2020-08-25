@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio | Brenna Gonsalves</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c62ae369ea.js" crossorigin="anonymous"></script>
+  <title> Projects | Brenna Gonsalves</title>
+</head>
   <body>
     <div class="container">
-  <!--Navbar -->
-      <nav class="header">
-        <a href="index.html"><img src="Images/Logo.SVG" alt="BrennaGonsalves-logo" class="logo" /></a>
-          <div class="header-right">
+      <!-- Top Navigation Menu -->
+      <nav class="topnav">
+        <a href="index.html" class="active">Brenna Gonsalves</a>
+          <div class="menu-links"id="myLinks">
             <a href="Projects.html">Work</a>
             <a href="About.html">About</a>
             <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-          </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     <!--Intro -->
       <section class="hero-content">
@@ -26,32 +33,36 @@
         </div>
       </section>
     <!--Projects -->
-      <section class="TheraShelf">
+      <section class="therashelf">
         <div class="Overview">
           <h4>TheraShelf</h4>
           <h3>Do therapy differently.</h3>
           <p>A workspace solution for home health therapists delivering remote services to their clients.</p>
-          <button type="button">View Case Study</button>
           <img class="phonepic" src="Images/TheraShelf.SVG" alt="TheraShelf Prototype">
         </div>
+        <button type="button">View Case Study</button>
       </section>
-    <!--Footer -->
-      <footer>
-        <h3>Let's Get in Touch</h3>
-        <p>Thank you for checking out my work. I’m always open to questions or discussions about our UX world.
-        </p>
-        <ul class="social-media-links">
-          <li>
-            <a href="https://www.linkedin.com/in/brennagonsalves/">LinkedIn</a>
-          </li>
-          <li>
-            <a href="https://github.com/brennagonsalves">GitHub</a>
-          </li>
-          <li>
-            <a href="mailto:brennagonsalves@gmail.com">Email</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
+      <!--Footer -->
+       <footer class="footer">
+           <h4 class="footer-slogan">Let's Get in Touch</h4>
+           <p class="footer-text">Thank you for checking out my work. I’m always open to questions or discussions about our UX world.
+           </p>
+         <ul class="social-media-links">
+           <li>
+             <a href="https://www.linkedin.com/in/brennagonsalves/">
+             <i class="fab fa-linkedin"></i></a>
+           </li>
+           <li>
+             <a href="https://github.com/brennagonsalves">
+             <i class="fab fa-github-square"></i></a>
+           </li>
+           <li>
+             <a href="mailto:brennagonsalves@gmail.com">
+             <i class="fas fa-envelope-square"></i></a>
+           </li>
+         </ul>
+       </footer>
+     </div>
+   </body>
+ <script src="myScript.js"></script>
 </html>
