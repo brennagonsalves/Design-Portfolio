@@ -13,9 +13,9 @@ body {
 h1 {
   color: #555C6E;
   font-family: 'Fira Sans';
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 4.5rem;
+  padding-bottom: 1.5rem;
 }
 
 h2 {
@@ -236,7 +236,7 @@ li {
 @media (min-width:768px) {
 
   section {
-    padding: 3rem 8rem;
+    padding: 6rem 8rem;
   }
 
   h3 {
@@ -268,7 +268,7 @@ li {
   }
 
   .overview{
-    grid-column: 1/7;
+    grid-column: 1/8;
     grid-row: 2/3;
     }
 
@@ -285,7 +285,7 @@ li {
 
   button {
     font-size: 2rem;
-    grid-column: 2/6;
+    grid-column: 1/7;
     grid-row: 4/5;
   }
 
@@ -300,7 +300,7 @@ li {
   .closing-info {
     display: inline-block;
     margin: 0 auto;
-    width: 60%;
+    width: 63%;
   }
 
   /*project 1 styling*/
@@ -416,11 +416,11 @@ li {
   }
 
   .intro {
-  grid-column: 1/8;
+  grid-column: 1/7;
   }
 
   .hero-image {
-  grid-column: 9/12;
+  grid-column: 8/13;
   width: 100%;
   }
 
@@ -487,6 +487,6 @@ li {
       display: inline-block;
       margin: 0 auto;
       padding: 2rem 0;
-      width: 40%;
+      width: 38%;
     }
 }
