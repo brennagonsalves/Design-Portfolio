@@ -347,7 +347,7 @@ a {
 
   /*project 1 desktop*/
   /*survey resizing*/
-    .charts, .feature-ranking, .competitors {
+  .charts, .feature-ranking, .competitors {
       width: 50%;
       margin: auto;
     }
