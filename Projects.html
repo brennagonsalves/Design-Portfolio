@@ -13,17 +13,18 @@
   <body>
     <div class="container">
   <!-- Top Navigation Menu -->
-    <nav class="topnav">
-      <a href="index.html" class="active">Brenna Gonsalves</a>
-        <div class="menu-links"id="myLinks">
-          <a href="Projects.html">Work</a>
-          <a href="About.html">About</a>
-          <a href="#resume">Resume</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
+  <nav>
+    <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="index.html" class="logo">Brenna Gonsalves</a>
+        <ul>
+          <li><a href="Projects.html">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+  </nav>
   <!--Case Study Overview-->
     <section class="casestudy-overview">
       <div class="overview-casestudy">
@@ -31,8 +32,8 @@
         <h3 class="centered-text">Do therapy differently.</h3>
         <p>A workspace solution for home health therapists delivering remote services to their clients.</p>
       </div>
-      <img class="therashelf-Preview" src="Images/TheraShelf_preview.SVG" alt="TheraShelf Preview">
-      <button type="button">View Case Study</button>
+      <img class="therashelf-Preview" src="Images/therashelf_preview.svg" alt="TheraShelf Preview">
+      <a href="Projects.html" class="button">View Prototype</a>
     </section>
   <!--Case Study Segments-->
     <section class="responsibilities">
@@ -69,34 +70,27 @@
       <div class="solution">
       <h4>The Solution</h4>
       <p>TheraShelf includes features that allow therapists to manage  caseloads, track client progress, organize treatment materials, and collaborate with other therapy professionals. It creates a streamlined, transparent experience from start to finish.</p>
-      <img class="therashelf-preview" src="Images/TheraShelf_Solution.SVG" alt="TheraShelf Solution">
       </div>
+      <img class="therashelf-preview" src="Images/therashelf-solution.svg" alt="TheraShelf Solution">
     </section>
   <!--Surveys-->
     <section class="surveys">
       <h3 class="centered-text">The Design Process</h3>
       <h4>Surveys</h4>
-      <p>I conducted a survey with 20 respondants to gain a better understanding of user’s experiences with cloud storage products. I included questions that explored specific motivations, feature rankings, and pain points. The key takeaways include:</p>
-      <div class="charts">
-        <img class="TheraShelf-Preview" src="Images/charts.SVG" alt="TheraShelf Solution">
-      </div>
-      <p>Respondants also provided a ranking of most important features for a cloud storage product.</p>
-      <div class="feature-ranking">
-        <img class="TheraShelf-Preview" src="Images/bar-graphs.SVG" alt="TheraShelf Solution">
-      </div>
-      <p class="survey-summary">The top ranked features were considered carefully down the road when prioritzing user stories. They are logical choices to include in the MVP.</p>
-      <button type="button" class="survey-button">View Full Survey</button>
+      <p>A survey was conducted with 20 respondants to gain a better understanding of user’s experiences with cloud storage products. I included questions that explored specific motivations, feature rankings, and pain points. The key takeaways include:</p>
+      <img class="charts" src="Images/charts.svg" alt="Chart">
+      <p>Respondants also provided a ranking of most important features for a cloud storage product. Top features were considered carefully down the road when prioritzing user stories. They are logical choices to include in the MVP.</p>
+      <img class="feature=ranking" src="Images/bar-graphs.svg" alt="Bar graphs">
+      <a href="Projects.html" class="button">View Full Survey</a>
     </section>
   <!--Competitive Analysis-->
     <section class="competitive-analysis">
       <div class="analysis">
         <h4>Competitive Analysis</h4>
         <p>An analysis was completed with some popular cloud storage products that are already on the market. Common strengths included simple, clean designs with strong visuals to communicate hierarchy of information. None of these products had specialized features that met the specific needs of healthcare workers.</p>
-        <div class="competitors">
-          <img class="TheraShelf-Preview" src="Images/Competitor_logos.SVG" alt="TheraShelf Solution">
-        </div>
       </div>
-      <button type="button">View Full Analysis</button>
+      <img class="competitors" src="Images/competitor-logos.svg" alt="Competitor Logos">
+      <a href="Projects.html" class="button">View Full Analysis</a>
     </section>
   <!--Personas-->
     <section class="personas">
@@ -104,90 +98,72 @@
         <h4>Personas</h4>
         <p>After completing my initial survey analysis, I had follow up conversations with two of the respondants. I gained a more thorough understanding of their frustations, goals, and attitudes towards cloud storage products. I developed personas to represent an inclusive and full spectrum representation of TheraShelf users. I would go on to reference these personas frequently when making design decisions for the product.</p>
       </div>
-      <div class="persona-one">
-        <img class="personas" src="Images/charlie-persona.SVG" alt="Persona One">
-      </div>
-      <div class="persona-two">
-        <img class="personas" src="Images/nadia-persona.SVG" alt="Persona One">
-      </div>
+      <img class="persona-one" src="Images/charlie-persona.svg" alt="Persona One">
+      <img class="persona-two" src="Images/nadia-persona.svg" alt="Persona One">
     </section>
   <!--User Stories-->
     <section class="user-stories">
       <h4>User Stories</h4>
       <p>I wrote user stories to account for the most important features per survey and SWOT analysis results. These stories were used to create the MVP that would eventually move into usability testing.</p>
       <div class="list-items">
-        <p>I want to log into my account</p>
-        <p>I want to view today's schedule</p>
-        <p> I want to assign materials to a client</p>
-        <p>I want to view a client medical records</p>
-        <p>I want to contact fellow therapists </p>
+        <h6>I want to log into my account</h6>
+        <h6>I want to view today's schedule</h6>
+        <h6> I want to assign materials to a client</h6>
+        <h6>I want to view client medical records</h6>
+        <h6>I want to contact fellow therapists </h6>
       </div>
-      <button type="button">View All User Stories</button>
+      <a href="Projects.html" class="button">View All User Stories</a>
     </section>
   <!--User Flows-->
     <section class="user-flows">
       <h4>User Flows</h4>
       <p>I created user flows to represent how a user would interact with TheraSelf to accomplish the high priority user stories. From there, a site map was created to help organize the destinations for each of the user flows.</p>
-      <img class="TheraShelf-Preview" src="Images/User_flow.SVG" alt="User Flows">
-      <button type="button">View All User Flows</button>
+      <img class="TheraShelf-Preview" src="Images/user-flow.svg" alt="User Flows">
+      <a href="Projects.html" class="button">View All User Flows</a>
     </section>
   <!--Wireframes-->
     <section class="wireframes">
       <h4>Wireframes</h4>
       <p>It was finally time to put pen to paper. I started by sketching out possible layouts for the product pages based on the main user flows. Rapid iterations allowed me to make some initial design decisions quickly and efficiently. I then created digital wireframes for my first round of usability testing.</p>
-      <div class="wireframes-small">
-        <img class="TheraShelf-Preview" src="Images/Wireframes.SVG" alt="Wireframes">
-      </div>
-      <div class="wireframes-large">
-        <img class="TheraShelf-Preview" src="Images/wireframes-large.SVG" alt="Wireframes-large">
-      </div>
+      <img class="wireframes-small" src="Images/wireframes.svg" alt="Wireframes">
+      <img class="wireframes-large" src="Images/wireframes-large.svg" alt="Wireframes-large">
     </section>
   <!--User Testing One-->
     <section class="user-testing">
       <h4>Put it to the Test</h4>
       <p>Using my low fidelity wire frames for reference, I created a clickable prototype in Figma. I completed remote usability testing with three participants to assess the effectiveness of the product design. They were presented with the following tasks:</p>
       <div class="list-items">
-        <p>Create a new account</p>
-        <p>View today’s visits</p>
-        <p>View a client’s chart</p>
-        <p>Assign a note to your client</p>
+        <h6>Create a new account</h6>
+        <h6>View today’s visits</h6>
+        <h6>View a client’s chart</h6>
+        <h6>Assign a note to your client</h6>
       </div>
       <p>The usability testing exposed several features that were problematic to the overall function of the product. These areas were revisited, tweaked, and/or replaced with more effective solutions.</p>
       <div>
         <h5>The Dashboard and Toolbar</h5>
       </div>
         <p>There was a bit of an overhaul to the dashboard page. The bottom toolbar was removed completely and a hamburger menu was added instead. This design uses space more effectively on the mobile screen while eliminating the need for ambiguous icons. The metrics were replaced with buttons to allow direct access to recent and/or most used features. Visuals were added to supplement the text information.</p>
-        <div class="revisions">
-          <img class="content-image" src="Images/Testing_revisions.SVG" alt="Usability Testing">
-        </div>
-      <button type="button">View Full Analysis</button>
+        <img class="revisions" src="Images/testing-revisions.svg" alt="Usability Testing">
+        <a href="Projects.html" class="button">View Full Analysis</a>
     </section>
   <!--Branding-->
     <section class="branding">
       <h4>Making the Brand</h4>
       <p>It’s time to define the TheraShelf brand. When making branding decisions, I carefully considered the target audience, user personas, and overarching goals of the product. The overall feel of the brand is intended to promote healing, growth, and simplicity. These traits are ideal for a health care product that centers around the rehabilitation process.</p>
       <h5>Color Palette</h5>
-      <div class="color-small">
-        <img class="TheraShelf-Preview" src="Images/Color_Palette.SVG" alt="Color Palette">
-      </div>
-      <div class="color-large">
-        <img class="TheraShelf-Preview" src="Images/color-palette-large.svg" alt="Color Palette">
-      </div>
+      <img class="color-small" src="Images/color-palette.svg" alt="Color Palette">
+      <img class="color-large" src="Images/color-palette-large.svg" alt="Color Palette">
       <p>The primary color for TheraShelf is a bright blue, which represents trust, tranqulity, and knowledge. Several of the secondary colors also fall in the blue and green families to communicate growth and healing. Strategic pops of color are used sparingly to highlight information in the product. </p>
       <h5>Typography</h5>
       <p>Both the primary brand typeface and complementary typeface are geometric sans-serif fonts. The typefaces are clean and easy to read at all sizes. It translates well from desktop to a mobile platform.</p>
-      <div class="typography">
-        <img class="TheraShelf-Preview" src="Images/type-large.svg" alt="Typography">
-      </div>
-      <button type="button">View Style Guide</button>
+      <img class="typography" src="Images/type-large.svg" alt="Typography">
+      <a href="Projects.html" class="button">View Style Guide</a>
     </section>
   <!--Preference Testing-->
     <section class="preference-testing">
       <h4>Preference Testing</h4>
       <p>I considered different configurations for the tab bar on the client overview page. Users were able to choose between the bubble feature or underline feature to highlight a specific tab during page navigation.</p>
-      <div class="revisions">
-        <img class="content-image" src="Images/Preference_testing.SVG" alt="Preference Testing">
-      </div>
+      <img class="revisions" src="Images/preference-testing.svg" alt="Preference Testing">
       <p>The majority of users preferred the bubble feature since it was clearer and more eye catching compared to the underline option. The design element was implemented throughout the product.</p>
     </section>
   <!--Prototyping & Testing-->
@@ -195,7 +171,7 @@
       <div class="Prototyping">
         <h4>Prototyping</h4>
         <p>A high fidelity prototype was created in Figma. I was careful to include the visual elements defined by the branding guidlines and preference testing. The visual elements were combined with the strategic layout of the product page to create an intuitive user experience. </p>
-        <img class="TheraShelf-Preview" src="Images/TheraShelf_preview.SVG" alt="Preference Testing">
+        <img class="TheraShelf-Preview" src="Images/therashelf_preview.svg" alt="TheraShelf Preview">
       </div>
     </section>
     <section class="user-testing">
@@ -203,21 +179,19 @@
         <h4>Another Round of Testing</h4>
         <p>I completed another round of remote usability testing with the high fidelity prototype. This time the tasks included:</p>
         <div class="list-items">
-          <p>Create a new account</p>
-          <p>View today’s visits</p>
-          <p>View a client’s chart</p>
-          <p>Assign a note to your client</p>
-          <p>Look up a therapist’s email address</p>
+          <h6>Create a new account</h6>
+          <h6>View today’s visits</h6>
+          <h6>View a client’s chart</h6>
+          <h6>Assign a note to your client</h6>
+          <h6>Look up a therapist’s email address</h6>
         </div>
         <p>Again, I received constructive feed back for additional changes that needed to be made to improve TheraShelf.</p>
         <div>
           <h5>Searching for Content</h5>
         </div>
         <p>This was an easy fix. The search icon was eliminated and replaced with a full search bar on the file page. This change improves element consistency from page to page. It also ensures that the user expectations are met throughout the product.</p>
-        <div class="revisions">
-          <img class="TheraShelf-Preview" src="Images/Testing_revisions_two.SVG" alt="Second">
-        </div>
-        <button type="button">View Prototype</button>
+        <img class="revision" src="Images/testing-revisions-two.svg" alt="User Testing">
+        <a href="Projects.html" class="button">View Prototype</a>
       </div>
     </section>
   <!--Conclusion-->
