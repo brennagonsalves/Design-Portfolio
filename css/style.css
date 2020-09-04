@@ -590,7 +590,7 @@ footer p {
 }
 
 /*image resizing*/
-.competitor-logos, .survey-images, .flow-image {
+.competitor-logos, .flow-image {
   width: 50%;
   margin: 0 auto;
 }
