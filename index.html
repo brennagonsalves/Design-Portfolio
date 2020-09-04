@@ -12,18 +12,21 @@
 </head>
   <body>
     <!-- Top Navigation Menu -->
-    <nav>
-      <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
+    <nav class="navbar">
         <a href="index.html" class="logo">Brenna Gonsalves</a>
-        <ul>
-          <li><a href="Projects.html">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-    </nav>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="Projects.html">Work</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
     <!--Intro -->
       <section class="hero">
         <div class="intro">
@@ -65,5 +68,12 @@
          </ul>
        </footer>
    </body>
- <script src="myScript.js"></script>
+   <script>
+     const toggleButton = document.getElementsByClassName('toggle-button')[0]
+     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  })
+ </script>
 </html>

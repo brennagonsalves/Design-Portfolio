@@ -5,6 +5,7 @@
 /*base for rem units*/
 html {
   font-size: 10px;
+  height: 100%;
 }
 
 body {
@@ -39,6 +40,7 @@ h3 {
   font-family: 'Fira Sans';
   font-size: 2.8rem;
   font-weight: 800;
+  line-height: 3.9rem;
   padding-bottom: 1.5rem;
 }
 
@@ -74,10 +76,23 @@ p {
   text-align: left;
 }
 
+.about-me p {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
 img {
   margin: auto;
   padding: 3rem 0;
   width: 100%;
+}
+
+.in-service {
+  padding-bottom: 2rem;
+}
+
+.inservice-photo {
+  padding-bottom: 0;
 }
 
 .phonepic {
@@ -102,6 +117,7 @@ img {
   font-family: 'Didact gothic';
   font-size: 1.8rem;
   padding: 2rem 4rem;
+  text-decoration: none;
 }
 
 /*avatar picture on homepage*/
@@ -196,87 +212,103 @@ li {
   padding-top: 0;
 }
 
-
-/*responsive navbar begin*/
-nav {
-    background-color: pink;
-    padding: 0 5rem;
+/*responsive navbar begins*/
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
 }
 
 .logo {
-    color: #555C6E;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    display: inline-block;
-    padding-top: 2.5rem;
-}
-
-
-nav ul {
-  display: inline-block;
-  float: right;
-  padding-right: 2rem;
-}
-
-nav ul li {
   color: #555C6E;
-  font-family: 'Didact gothic', sans-serif;
-  font-size: 2.4rem;
-  padding-left: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 2rem 3rem;
 }
 
-a {
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2.2rem;
+    display: block;
     text-decoration: none;
-    color: #555C6E;
+    color: #4f4f4f;
+    padding-right: 3rem;
 }
 
-a:hover {
-  border-bottom: 2px solid blue;
+.navbar-links li a:hover {
+    color: #2BB09F;
 }
 
-/*hamburger icon*/
-.fa-bars {
-  color: #3E4457
-}
-
-/*hidden for desktop*/
-.checkbtn {
-    color: white;
-    font-size: 2.5rem;
-    float: right;
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2rem;
 }
 
-#check {
+.bar {
+    height: .4rem;
+    width: 100%;
+    background-color: #3B3B3B;
+    border-radius: 2rem;
+}
+
+@media (max-width: 765px) {
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 5px 2px -2px rgba(0,0,0,.2);
+}
+
+.toggle-button {
+  display: flex;
+}
+
+.navbar-links {
     display: none;
+    width: 100%;
 }
 
-/*responsive nav bar media mobile*/
-@media (max-width: 760px) {
-  .checkbtn {
-  display: block;
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
 }
 
-/*opened menu*/
-nav ul {
-  position: fixed;
-  width: 100%;
-  height: 50%;
-  background-color: #EDF1F4;
-  text-align: center;
-  padding-top: 3rem;
-  top: 8.5rem;
-  right: -100%;
-  transition: all .5s;
+.navbar-links ul li {
+      text-align: center;
 }
 
-nav ul li {
-  display: block;
-  font-size: 3rem;
+.navbar-links ul li a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 2.4rem;
+    color: #3B3B3B;
+    padding: 2rem 1rem;
 }
 
-#check:checked ~ ul{
-  right: 0;
+.navbar-links.active {
+    display: flex;
+    background-color: #EDF1F4;
   }
 }
 
@@ -329,7 +361,7 @@ h2 {
 }
 
 .overview{
-  grid-column: 2/9;
+  grid-column: 1/8;
   grid-row: 2/3;
   text-align: left;
 }
@@ -343,7 +375,7 @@ h2 {
 
 .button {
   font-size: 2rem;
-  grid-column: 2/7;
+  grid-column: 1/5;
   grid-row: 4/5;
 }
 
@@ -497,16 +529,12 @@ p {
 }
 
 .intro {
-  grid-column: 2/7;
+  grid-column: 1/7;
 }
 
 .hero-image {
   grid-column: 7/12;
   width: 100%;
-}
-
-.location {
-  padding-top: 2.5rem;
 }
 
 .therashelf p {
@@ -524,7 +552,7 @@ p {
 }
 
 .overview{
-  grid-column: 2/8;
+  grid-column: 1/8;
 }
 
 .phonepic {
@@ -536,7 +564,7 @@ p {
 
 .button {
   font-size: 2.2rem;
-  grid-column: 1/7;
+  grid-column: 1/6;
   grid-row: 3/4;
   margin: 0 auto;
 }
@@ -578,5 +606,17 @@ footer p {
 ul {
   font-size: 6rem;
   text-align: center;
+  }
+
+  /*about photo resize*/
+  .inservice-photo {
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 0;
+  }
+
+  .about-hero {
+    margin: 0 auto;
+    width: 85%;
   }
 }
