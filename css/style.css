@@ -579,12 +579,12 @@ footer p {
 /*project 1 desktop*/
 
 /*resizing*/
-.therashelf-preview, .therashelf-solution {
+.therashelf-preview, .therashelf-solution, .prototype-image {
   margin: 0 auto;
   width: 75%;
 }
 
-.revision, .typography, .color-large, .wireframes-large {
+.revision, .typography, .color-large, .wireframes-large, .sketches {
   margin: 0 auto;
   width: 70%;
 }
