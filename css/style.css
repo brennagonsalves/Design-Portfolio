@@ -76,6 +76,9 @@ p {
   text-align: left;
 }
 
+.competitive-analysis p {
+  padding-bottom: 2rem;
+}
 .about-me p {
   padding-bottom: 2rem;
   font-size: 2rem;
@@ -450,6 +453,7 @@ h2 {
 .wireframes-large, .color-large {
   display: block;
   margin: 0 auto;
+  width: 80%;
 }
 
 .wireframes-small, .color-small {
@@ -459,11 +463,6 @@ h2 {
 .list-items, .survey-images, .flow-image {
   width: 70%;
   margin: 3rem auto;
-}
-
-.competitor-logos {
-  margin: 0 auto;
-  width: 30%;
 }
 
 .list-items p {
@@ -590,7 +589,7 @@ footer p {
 }
 
 /*image resizing*/
-.competitor-logos, .flow-image {
+.flow-image {
   width: 50%;
   margin: 0 auto;
 }
