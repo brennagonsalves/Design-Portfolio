@@ -118,7 +118,6 @@
         <h6>I want to view client medical records</h6>
         <h6>I want to contact fellow therapists </h6>
       </div>
-      <a href="Projects.html" class="button">View All User Stories</a>
     </section>
   <!--User Flows-->
     <section class="user-flows">
@@ -177,11 +176,11 @@
   <!--Preference Testing-->
     <section class="preference-testing">
       <h4>Preference Testing</h4>
-      <p>I considered different configurations for the tab bar on the client overview page. Users were able to choose between the bubble feature or underline feature to highlight a specific tab during page navigation.</p>
+      <p>I considered different configurations for the menu on the client overview page. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation.</p>
       <div class="revision">
         <img class="revisions" src="Images/preference-testing.svg" alt="Preference Testing">
       </div>
-      <p>The majority of users preferred the bubble feature since it was clearer and more eye catching compared to the underline option. The design element was implemented throughout the product.</p>
+      <p>The majority of users preferred the slide feature since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product.</p>
     </section>
   <!--Prototyping & Testing-->
     <section class="prototyping">
@@ -249,5 +248,12 @@
     </footer>
    </div>
   </body>
- <script src="myScript.js"></script>
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+   toggleButton.addEventListener('click', () => {
+   navbarLinks.classList.toggle('active')
+ })
+ </script>
 </html>
