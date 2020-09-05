@@ -132,7 +132,7 @@ img {
 
 /*text in blue divs*/
 .list-items {
-  background-color: #C8D8E8;
+  background-color: #ededed;
   border-radius: .8rem;
   margin: 2.5rem 0;
   padding: 2rem;
@@ -155,11 +155,7 @@ img {
 }
 
 .responsibilities{
-  background-color: #C8D8E8;
-}
-
-.conclusion {
-  background-color: #C8D8E8;
+  background-color: #F3F6FA;
 }
 
 /*footer styling begins*/
@@ -201,13 +197,27 @@ li {
 }
 
 /*hidden for large screens*/
-.wireframes-large, .color-large {
+.wireframes-large, .color-large, .prototype-image {
   display: none;
   }
 
 /*mobile screen*/
-.wireframes-small, .color-small {
+.wireframes-small, .color-small, .prototype-image-small {
   display: block;
+}
+
+.prototype-preview, .wireframe-images {
+  background-color: #F3F6FA;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.prototype-image, .wireframes-small, .prototype-image-small {
+  padding: 2rem;
 }
 
 /*spacing between sections*/
@@ -450,13 +460,13 @@ h2 {
 
 /*wireframe resizing*/
 
-.wireframes-large, .color-large {
+.wireframes-large, .color-large, .prototype-image {
   display: block;
   margin: 0 auto;
   width: 80%;
 }
 
-.wireframes-small, .color-small {
+.wireframes-small, .color-small, .prototype-image-small {
   display: none;
 }
 
