@@ -146,7 +146,8 @@ img {
 }
 
 /*spacing for summary section*/
-.tools, .deliverables, .take-aways-summary, .final-thoughts {
+.tools, .deliverables,
+.take-aways-summary, .final-thoughts {
   padding: 3rem 0 0;
 }
 
@@ -214,12 +215,17 @@ li {
 }
 
 .prototype-image, .wireframes-small, .prototype-image-small,
-.revisions, .therashelf-image {
-  padding: 2.5rem;
+.revisions, .therashelf-image, .solution-preview {
+  padding: 3rem 2.5rem;
+}
+
+.solution-preview, .revision, .prototype-image-small {
+  margin-top: 2rem;
 }
 
 /*spacing between sections*/
-.user-testing, .user-stories {
+.user-testing, .user-stories, .surveys, .personas,
+.user-flows, .solution {
   padding-top: 0;
 }
 
