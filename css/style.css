@@ -225,7 +225,8 @@ li {
 
 /*spacing between sections*/
 .user-testing, .user-stories, .surveys, .personas,
-.user-flows, .solution {
+.user-flows, .solution, .branding, .preference-testing,
+.prototyping, .conclusion {
   padding-top: 0;
 }
 
