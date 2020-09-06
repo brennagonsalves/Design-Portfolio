@@ -145,8 +145,8 @@ img {
   text-align: center;
 }
 
-/*spacing for responsbilities section*/
-.tools, .deliverables, .take-aways, .final-thoughts {
+/*spacing for summary section*/
+.tools, .deliverables, .take-aways-summary, .final-thoughts {
   padding: 3rem 0 0;
 }
 
@@ -478,7 +478,7 @@ h2 {
 }
 
 .revisions, .color-large {
-  width: 80%;
+  width: 75%;
 }
 
 .conclusion h3, .surveys h3 {
@@ -586,7 +586,8 @@ footer p {
 /*project 1 desktop*/
 
 /*resizing*/
-.therashelf-preview, .therashelf-solution, .prototype-image {
+.therashelf-preview, .therashelf-solution,
+.prototype-image {
   margin: 0 auto;
   width: 75%;
 }
@@ -598,7 +599,7 @@ footer p {
 }
 
 /*image resizing*/
-.flow-image, .revisions {
+.flow-image, .revisions, .take-aways {
   display: block;
   width: 50%;
   margin: 0 auto;
