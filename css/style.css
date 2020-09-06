@@ -193,7 +193,7 @@ li {
 }
 
 /*hidden for large screens*/
-.wireframes-large, .color-large, .prototype-image {
+.wireframes-large,.prototype-image {
   display: none;
   }
 
@@ -592,7 +592,7 @@ footer p {
   width: 75%;
 }
 
-.typography, .color-large, .wireframes-large,
+.typography, .wireframes-large,
 .sketches, .therashelf-solution {
   margin: 0 auto;
   width: 70%;
@@ -601,7 +601,7 @@ footer p {
 /*image resizing*/
 .flow-image, .revisions, .take-aways {
   display: block;
-  width: 50%;
+  width: 55%;
   margin: 0 auto;
 }
 
