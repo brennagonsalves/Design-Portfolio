@@ -79,14 +79,15 @@ p {
 .competitive-analysis p {
   padding-bottom: 2rem;
 }
+
 .about-me p {
   padding-bottom: 2rem;
   font-size: 2rem;
 }
 
 img {
-  margin: auto;
-  padding: 3rem 0;
+  margin: auto 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
@@ -121,6 +122,9 @@ img {
   font-size: 1.8rem;
   padding: 2rem 4rem;
   text-decoration: none;
+}
+.button-styling {
+  padding-top: 3rem;
 }
 
 /*avatar picture on homepage*/
@@ -210,23 +214,22 @@ li {
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin: 4rem -50vw 0 -50vw;
 }
 
-.prototype-image, .wireframes-small, .prototype-image-small,
+.prototype-image, .prototype-image-small, .wireframes-small,
 .revisions, .therashelf-image, .solution-preview {
   padding: 3rem 2.5rem;
 }
 
-.solution-preview, .revision, .prototype-image-small {
-  margin-top: 2rem;
+.solution-preview, .revision {
+  padding: 3rem 0;
 }
 
-/*spacing between sections*/
+/*spacing corrections between sections*/
 .user-testing, .user-stories, .surveys, .personas,
 .user-flows, .solution, .branding, .preference-testing,
-.prototyping, .conclusion {
+.prototyping, .conclusion, .wireframes {
   padding-top: 0;
 }
 
@@ -292,6 +295,7 @@ li {
     border-radius: 2rem;
 }
 
+/*media query for responsive navbar*/
 @media (max-width: 765px) {
 .navbar {
     flex-direction: column;
@@ -464,8 +468,7 @@ h2 {
 }
 
 /*wireframe resizing*/
-
-.wireframes-large, .color-large, .prototype-image {
+.wireframes-large, .color-large, .prototype-image, .sketches {
   display: block;
   margin: 0 auto;
   width: 80%;
