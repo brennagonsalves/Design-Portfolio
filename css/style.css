@@ -74,10 +74,9 @@ p {
   font-family: 'Didact Gothic';
   font-size: 1.8rem;
   line-height: 2.8rem;
-  padding: 0 2.2rem;
+  padding: 0 3rem;
   text-align: left;
 }
-
 
 img {
   display: block;
@@ -137,7 +136,7 @@ img {
   padding-bottom: 4rem;
 }
 
-.segment {
+.segment, .analysis-paragraph {
   padding-top: 2rem;
 }
 
@@ -169,16 +168,12 @@ img {
 
 .therashelf {
   background-color: #C8D8E8;
-  text-align: center;
 }
 
 
-.responsibilities{
+.responsibilities, .prototype-preview,
+ .wireframe-images,.testing{
   background-color: #F3F6FA;
-}
-
-.analysis-paragraph{
-  padding-top: 2rem;
 }
 
 /*footer styling begins*/
@@ -220,7 +215,7 @@ footer p {
   display: none;
   }
 
-/*mobile screen*/
+/*display on mobile screen*/
 .color-small, .logos-mobile,
 .revisions{
   display: block;
@@ -229,11 +224,6 @@ footer p {
 .wireframes-small,.prototype-image-small {
   display: block;
   padding: 3rem 2rem;
-}
-
-.prototype-preview, .wireframe-images,
-.testing {
-  background-color: #F3F6FA;
 }
 
 /*about page stying*/
@@ -252,7 +242,6 @@ footer p {
 }
 
 /*responsive navbar begins*/
-
 .navbar {
   border-bottom: .1rem solid #F3F3F3;
   display: flex;
@@ -547,8 +536,8 @@ img {
 
 
 /*hide images on mobile screen*/
-.wireframes-small, .color-small,
- .prototype-image-small, .logos-mobile, .revisions {
+.wireframes-small, .color-small, .prototype-image-small,
+.logos-mobile, .revisions {
   display: none;
 }
 
@@ -720,13 +709,9 @@ footer p {
   margin: 5rem 15rem;
 }
 
-.list-items p {
-  font-size: 2rem;
-}
-
-/*increase icon size on footer*/
+/*increase icon size on footer large screens*/
 ul {
-  font-size: 6rem;
+  font-size: 7rem;
   text-align: center;
   }
 
