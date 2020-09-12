@@ -9,11 +9,10 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fafafa;
 }
 
 section {
-  padding: 3.2rem;
   text-align: center;
 }
 
@@ -22,7 +21,7 @@ h1 {
   font-family: 'Fira Sans';
   font-size: 3rem;
   font-weight: 800;
-  padding-bottom: 1.5rem;
+  padding: 3rem 0 1.5rem 2.3rem;
   text-align: left;
 }
 
@@ -32,13 +31,14 @@ h2 {
   font-size: 2.2rem;
   font-weight: lighter;
   line-height:3.3rem;
+  padding: 0 2.3rem;
   text-align: left;
 }
 
 h3 {
   color: #555C6E;
   font-family: 'Fira Sans';
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 800;
   line-height: 3.9rem;
   padding-bottom: 1.5rem;
@@ -47,9 +47,10 @@ h3 {
 h4 {
   color: #555C6E;
   font-family: 'Fira Sans';
-  font-size: 2.2rem;
-  padding-bottom: 1.5rem;
+  font-size: 2.4rem;
   font-weight: 800;
+  padding-top: 4.5rem;
+  padding-bottom: 1.5rem;
 }
 
 
@@ -57,7 +58,7 @@ h5 {
   color: #555C6E;
   font-family: 'Fira Sans';
   font-size: 2rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 h6 {
@@ -73,44 +74,125 @@ p {
   font-family: 'Didact Gothic';
   font-size: 1.8rem;
   line-height: 2.8rem;
+  padding: 0 2.2rem;
   text-align: left;
 }
 
-.competitive-analysis p {
-  padding-bottom: 2rem;
-}
-
-.about-me p {
-  padding-bottom: 2rem;
-  font-size: 2rem;
-}
 
 img {
-  margin: auto 0;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   padding: 4rem 0;
-  width: 100%;
 }
 
-.in-service {
-  padding-bottom: 2rem;
+/*define grid area names*/
+.navbar {
+  grid-area: navbar;
 }
 
-.inservice-photo {
-  padding-bottom: 0;
+.sidebar {
+  display: none; /*hidden for mobile screens*/
+  grid-area: sidebar;
 }
 
-.phonepic {
-  width: 70%;
+.casestudy-overview {
+  grid-area: overview;
 }
 
-.persona-one, .persona-two {
-  margin: 0 auto;
-  width: 70%;
+.responsibilities {
+  grid-area: responsibilities;
 }
 
-.color-small {
-  width: 75%;
-  margin: auto;
+.problem {
+  grid-area: problem;
+}
+
+.solution {
+  grid-area: solution;
+}
+
+.surveys {
+  grid-area: surveys;
+}
+
+.button-styling {
+  margin-top: 3rem;
+}
+
+.competitive-analysis{
+  grid-area: analysis;
+}
+
+.personas{
+  grid-area: personas;
+}
+
+.user-stories{
+  grid-area: stories;
+}
+
+.user-flows{
+  grid-area: flows;
+}
+
+.wireframes{
+  grid-area: wireframes;
+}
+
+.user-testing-one{
+  grid-area: testing;
+}
+
+.branding{
+  grid-area: branding;
+}
+
+.prototyping{
+  grid-area: prototyping;
+}
+
+.preference-testing{
+  grid-area: preftesting;
+}
+
+.user-testing-two{
+  grid-area: testingtwo;
+}
+
+.conclusion {
+  grid-area: conclusion;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*grid for mobile screens one column*/
+.container-project1{
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "sidebar"
+  "overview"
+  "responsibilities"
+  "problem"
+  "solution"
+  "surveys"
+  "analysis"
+  "personas"
+  "stories"
+  "flows"
+  "wireframes"
+  "testing"
+  "branding"
+  "prototyping"
+  "preftesting"
+  "testingtwo"
+  "conclusion"
+  "footer";
 }
 
 .button {
@@ -120,39 +202,50 @@ img {
   display: inline-block;
   font-family: 'Didact gothic';
   font-size: 1.8rem;
-  padding: 2rem 4rem;
+  margin-bottom: 5rem;
+  padding: 2rem 6rem;
   text-decoration: none;
 }
-.button-styling {
-  padding-top: 3rem;
+
+
+/*spacing corrections*/
+.tools, .final-thoughts {
+  padding-bottom: 4rem;
 }
 
-/*avatar picture on homepage*/
-.hero-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.segment {
+  padding-top: 2rem;
+}
+
+.revision, .prototype-preview {
+  margin-top: 4rem;
+}
+
+/*image resizing*/
+.persona-one, .persona-two,
+.charts, .logos-mobile, .phonepic {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.take-aways, .flow-image, .sketches,
+.color-large, .typography {
+  padding: 3rem 2rem;
 }
 
 /*text for user stories*/
 .list-items {
-  background-color: #F3F3F3;
+  background-color: #EEEEEE;
   border-radius: .8rem;
-  margin: 2.5rem 0;
-  padding: 2rem;
+  font-size:1.8rem;
+  margin: 4rem 2rem;
+  padding: 2rem 0;
   text-align: center;
 }
 
-/*project background color on homepage*/
 .therashelf {
   background-color: #C8D8E8;
   text-align: center;
-}
-
-/*spacing for summary section*/
-.tools, .deliverables,
-.take-aways-summary, .final-thoughts {
-  padding: 3rem 0 0;
 }
 
 .myrole, .deliverables, .tools{
@@ -163,12 +256,13 @@ img {
   background-color: #F3F6FA;
 }
 
+.analysis-paragraph{
+  padding-top: 2rem;
+}
 /*footer styling begins*/
 footer {
   color: white;
   background-color: #555C6E;
-  grid-area: footer;
-  padding: 2rem 3rem;
 }
 
 /*center footer slogan*/
@@ -180,66 +274,77 @@ footer h4 {
 
 footer p {
   color: white;
+  text-align: center;
 }
 
 /*footer icon styling*/
 .fa-linkedin, .fa-github-square, .fa-envelope-square {
   color: #BFE3DB;
-  padding-top: 2rem;
 }
 
-ul {
+.footer ul {
   font-size: 4rem;
   text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
 }
 
-li {
+.footer li {
   display: inline-block;
+  margin-right: .7rem;
 }
 
 /*hidden for large screens*/
-.wireframes-large,.prototype-image {
+.wireframes-large,.prototype-image,
+.logos-large, .desktop-testing {
   display: none;
   }
 
 /*mobile screen*/
-.wireframes-small, .color-small, .prototype-image-small {
+.color-small, .logos-mobile, .revisions{
   display: block;
 }
 
-.prototype-preview, .wireframe-images,
-.revision, .solution-preview {
+.wireframes-small,.prototype-image-small {
+  display: block;
+  padding: 3rem 2rem;
+}
+
+.prototype-preview, .wireframe-images {
   background-color: #F3F6FA;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin: 4rem -50vw 0 -50vw;
 }
 
-.prototype-image, .prototype-image-small, .wireframes-small,
-.revisions, .therashelf-image, .solution-preview {
-  padding: 3rem 2.5rem;
+.revision {
+  background-color: #F3F6FA;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.solution-preview, .revision {
-  padding: 3rem 0;
+/*about page stying*/
+.about-me p {
+  padding-bottom: 2.3rem;
 }
 
-/*spacing corrections between sections*/
-.user-testing, .user-stories, .surveys, .personas,
-.user-flows, .solution, .branding, .preference-testing,
-.prototyping, .conclusion, .wireframes {
-  padding-top: 0;
+.inservice-photo {
+  padding-bottom: 0;
 }
+
+.in-service h6 {
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 1rem 0 4rem 0;
+
+}
+
 
 /*responsive navbar begins*/
+
 .navbar {
+  border-bottom: .1rem solid #F3F3F3;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #fafafa;
 }
 
 .logo {
@@ -260,7 +365,7 @@ li {
     padding: 0;
 }
 
-.navbar-links li {
+.navbar-links li, .page-navigation li{
     list-style: none;
 }
 
@@ -273,7 +378,15 @@ li {
     padding-right: 3rem;
 }
 
-.navbar-links li a:hover {
+/*sidebar for page navigation*/
+.page-navigation li a {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.navbar-links li a:hover, .page-navigation li a:hover {
     color: #2BB09F;
 }
 
@@ -288,6 +401,7 @@ li {
     height: 2rem;
 }
 
+/*hamburger menu*/
 .bar {
     height: .4rem;
     width: 100%;
@@ -300,7 +414,7 @@ li {
 .navbar {
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 0 5px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 3px 5px  rgba(0,0,0,.08);
 }
 
 .toggle-button {
@@ -312,13 +426,13 @@ li {
     width: 100%;
 }
 
-.navbar-links ul {
+.navbar-links ul{
     width: 100%;
     flex-direction: column;
 }
 
 .navbar-links ul li {
-      text-align: center;
+    text-align: center;
 }
 
 .navbar-links ul li a {
@@ -337,14 +451,24 @@ li {
 /*media queries begin for tablet*/
 @media (min-width:768px) {
 
-section {
-  padding: 5rem;
-  text-align: center;
+/* sticky sidebar*/
+.sidebar {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20.8rem;
+  padding-top: 3rem;
+  position: sticky;
+  top:0;
+  height: 100vh;
+}
+
+.page-navigation li {
+  display: block;
 }
 
 .therashelf p {
   font-size: 2rem;
-  width: 75%;
 }
 
 h1 {
@@ -356,67 +480,107 @@ h2 {
   line-height: 3.5rem;
 }
 
+h3 {
+  font-size: 3.8rem;
+}
+
+h4 {
+  font-size: 3rem;
+  padding-top: 6rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+  padding-top: 4rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3.1rem;
+  padding: 0 4.5rem;
+}
+
+img {
+  padding: 6rem 0;
+}
+
+.footer h4 {
+  padding: 3rem;
+}
+
+/*grid for hero homepage (tablet)*/
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  width: 100%;
+  padding: 5rem 0;
 }
 
 .intro {
   grid-column: 1/8;
-  grid-row: 1;
-  text-align: left;
+  padding-left: 5rem;
 }
 
 .hero-image {
-  grid-column: 8/13;
-  grid-row: 1;
-  padding: 2rem 0 0 2rem;
+  grid-column: 8/12;
   width: 100%;
 }
 
-/*grid for therashelf intro (project 1)*/
+/*grid for project1 intro (tablet)*/
 .therashelf {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 5rem 0;
   width: 100%;
 }
 
 .overview{
-  grid-column: 1/8;
-  grid-row: 2/3;
+  grid-column: 2/9;
   text-align: left;
 }
 
+.overview p {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+
 .phonepic {
-  grid-column: 9/13;
+  grid-column: 9/12;
   grid-row: 1/5;
-  max-width: 100%;
-  padding: 0;
+  max-width: 80%;
 }
 
 .button {
-  font-size: 2rem;
-  grid-column: 1/5;
-  grid-row: 4/5;
+  font-size: 2.2rem;
+  grid-column: 2/7;
 }
 
-/*footer styling tablet*/
-.footer {
-  width: 100%;
-  text-align: center;
-  padding: 3rem;
+/*grid for project1 (tablet)*/
+.container-project1 {
+  grid-template-columns: 2fr 6fr;
+  grid-template-areas:
+  "navbar navbar"
+  "sidebar overview"
+  "sidebar responsibilities"
+  "sidebar problem"
+  "sidebar solution"
+  "sidebar surveys"
+  "sidebar analysis"
+  "sidebar personas"
+  "sidebar stories"
+  "sidebar flows"
+  "sidebar wireframes"
+  "sidebar testing"
+  "sidebar branding"
+  "sidebar prototyping"
+  "sidebar preftesting"
+  "sidebar testingtwo"
+  "sidebar conclusion"
+  "footer footer";
 }
 
-.closing-info {
-  display: inline-block;
-  margin: 0 auto;
-  width: 57%;
-}
-
-/*project 1 styling*/
-
-/*roles,deliverables, tools section */
+/*subgrid for responsbilities section*/
 .responsibilities {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -436,63 +600,77 @@ h2 {
   padding: 0;
 }
 
-/*resizing*/
-.charts, .feature-ranking {
-  width: 65%;
-  margin: auto;
+.deliverables {
+  padding-bottom: 6rem;
 }
 
-.therashelf-solution {
-  padding: 3rem 3rem 0 3rem;
-}
-
-/*persona section*/
+/*subgrid for personas*/
 .personas {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .intro-content {
-  grid-column: 1/13;
+  grid-column: 1/3;
   grid-row: 1;
 }
 
 .persona-one {
-  grid-column: 2/6;
+  grid-column: 1;
   grid-row: 2;
 }
 
 .persona-two {
-  grid-column: 7/11;
+  grid-column: 2;
   grid-row: 2;
 }
 
-/*wireframe resizing*/
-.wireframes-large, .color-large, .prototype-image, .sketches {
+.wireframes-large, .desktop-testing{
   display: block;
-  margin: 0 auto;
-  width: 80%;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
-.wireframes-small, .color-small, .prototype-image-small {
+
+/*hide images on mobile screen*/
+.wireframes-small, .color-small,
+ .prototype-image-small, .logos-mobile, .revisions {
   display: none;
 }
 
-.list-items, .survey-images, .flow-image {
-  width: 70%;
-  margin: 3rem auto;
+/*testing item resizing*/
+.list-items {
+  background-color: #EEEEEE;
+  margin: 3rem 4rem;
+  padding: 2rem 0;
 }
 
 .list-items p {
   font-size: 2rem;
 }
 
-.revisions, .color-large {
-  width: 75%;
+/*image resizing for projects*/
+.color-large,.take-away,
+.sketches, .flow-image{
+  margin: 0 auto;
+  width: 85%;
 }
 
-.conclusion h3, .surveys h3 {
-  padding-bottom: 3.5rem;
+.segment {
+  padding-top: 5rem;
+}
+
+/*spacing for about page*/
+.about-me {
+  padding: 0 5rem 3rem 0;
+}
+
+.about-me h3 {
+  padding-bottom: 4rem;
+}
+
+.inservice-photo {
+  width: 60%;
 }
 
 /*increase icon size on footer*/
@@ -502,17 +680,19 @@ ul {
   }
 }
 
+.footer h4 {
+  padding-bottom: 1.5rem;
+}
+
 /*media query for desktop*/
 @media (min-width:1280px) {
 
 section {
-  padding: 5rem 10rem;
   text-align: center;
 }
 
 h1 {
   font-size: 4.8rem;
-  padding-bottom: 2rem;
   text-align: left;
 }
 
@@ -532,95 +712,95 @@ h4 {
 }
 
 p {
-  padding: 0 15rem;
+  padding: 0 11rem;
 }
 
 .logo {
   font-size: 2.5rem;
 }
 
-/*grid for hero content*/
-.hero {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.intro {
-  grid-column: 1/7;
-}
-
-.hero-image {
-  grid-column: 7/12;
-  width: 100%;
-}
-
 .therashelf p {
   font-size: 2.7rem;
   line-height: 4rem;
   text-align: left;
-  padding: 0 0 4rem 0;
 }
 
-/*grid for project 1 summary*/
+/*grid for hero homepage (desktop)*/
+.hero {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 5rem 8rem;
+}
+
+.intro {
+  grid-column: 1/8;
+  padding-left: 5rem;
+}
+
+.hero-image {
+  grid-column: 8/12;
+  width: 100%;
+}
+
+/*grid for project1 intro (desktop)*/
 .therashelf {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 5rem 8rem;
   width: 100%;
 }
 
 .overview{
-  grid-column: 1/8;
+  grid-column: 3/9;
+}
+
+.overview p {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
 }
 
 .phonepic {
   grid-column: 9/12;
-  grid-row: 1/6;
-  max-width: 95%;
-  padding: 0;
+  grid-row: 1/5;
+  max-width: 80%;
 }
 
 .button {
   font-size: 2.2rem;
-  grid-column: 1/6;
-  grid-row: 3/4;
-  margin: 0 auto;
+  grid-column: 3/6;
 }
 
 footer p {
   font-size: 2rem;
-  width: 58%;
   margin: 0 auto;
-  padding: 0;
 }
 
 /*project 1 desktop*/
 
 /*resizing*/
-.therashelf-preview, .therashelf-solution,
-.prototype-image {
-  margin: 0 auto;
-  width: 75%;
-}
-
-.typography, .wireframes-large,
-.sketches, .therashelf-solution {
-  margin: 0 auto;
-  width: 70%;
-}
-
-/*image resizing*/
-.flow-image, .revisions, .take-aways {
+.flow-image, .take-aways,
+.sketches, .wireframes-large  {
   display: block;
-  width: 55%;
   margin: 0 auto;
+  max-width: 70%;
 }
 
-.closing-info {
-  display: inline-block;
+.charts, .persona-one, .persona-two {
   margin: 0 auto;
-  padding: 2rem 0;
-  width: 65%;
-  }
+  max-width: 40%;
+}
+
+/*testing item resizing*/
+.list-items {
+  background-color: #EEEEEE;
+  margin: 5rem 15rem;
+}
+
+.list-items p {
+  font-size: 2rem;
+}
 
 /*increase icon size on footer*/
 ul {
@@ -628,15 +808,12 @@ ul {
   text-align: center;
   }
 
-  /*about photo resize*/
-  .inservice-photo {
-    margin: 0 auto;
-    width: 75%;
-    padding-bottom: 0;
-  }
+/*about page styling desktop*/
+.about-me {
+  padding: 0 10rem 4rem 10rem;
+}
 
-  .about-hero {
-    margin: 0 auto;
-    width: 85%;
+.inservice-photo {
+  width: 60%;
   }
 }
