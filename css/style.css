@@ -534,7 +534,7 @@ img {
 }
 
 .overview{
-  grid-column: 2/9;
+  grid-column: 2/8;
   text-align: left;
 }
 
@@ -545,8 +545,12 @@ img {
   padding-left: 1rem;
 }
 
+.overview h3 {
+  font-size: 3.4rem;
+}
+
 .phonepic {
-  grid-column: 9/12;
+  grid-column: 8/13;
   grid-row: 1/5;
   max-width: 80%;
 }
@@ -608,6 +612,7 @@ img {
 .personas {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 0;
 }
 
 .intro-content {
@@ -618,6 +623,7 @@ img {
 .persona-one {
   grid-column: 1;
   grid-row: 2;
+  padding-bottom: 0;
 }
 
 .persona-two {
@@ -662,7 +668,7 @@ img {
 
 /*spacing for about page*/
 .about-me {
-  padding: 0 5rem 3rem 0;
+  padding: 0 5rem 3rem 05rem;
 }
 
 .about-me h3 {
@@ -729,7 +735,7 @@ p {
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 5rem 8rem;
+  padding: 8rem;
 }
 
 .intro {
@@ -746,30 +752,39 @@ p {
 .therashelf {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 5rem 8rem;
+  padding: 8rem;
   width: 100%;
 }
 
 .overview{
-  grid-column: 3/9;
+  grid-column: 2/8;
+  padding-top: 4rem;
 }
 
 .overview p {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   line-height: 3.8rem;
   padding-bottom: 4rem;
   padding-left: 1rem;
 }
 
+.overview h3 {
+  font-size: 4.2rem;
+  padding: 1.5rem 0;
+}
+
+.overview h4 {
+  font-size: 3.5rem;
+}
+
 .phonepic {
-  grid-column: 9/12;
+  grid-column: 8/13;
   grid-row: 1/5;
-  max-width: 80%;
 }
 
 .button {
   font-size: 2.2rem;
-  grid-column: 3/6;
+  grid-column: 2/5;
 }
 
 footer p {
