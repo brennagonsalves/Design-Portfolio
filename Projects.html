@@ -11,25 +11,38 @@
   <title> Projects | Brenna Gonsalves</title>
 </head>
   <body>
-    <div class="container">
+    <div class="container-project1">
   <!-- Top Navigation Menu -->
-  <nav class="navbar">
-      <a href="index.html" class="logo">Brenna Gonsalves</a>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="Projects.html">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="navbar">
+          <a href="index.html" class="logo">Brenna Gonsalves</a>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="Projects.html">Work</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+          </div>
+      </nav>
+  <!--Sidebar for large screens-->
+      <div class="sidebar">
+        <div class="page-navigation">
+            <ul>
+              <li><a href="#intro">Project Intro</a></li>
+              <li><a href="#discovery-phase">Discovery Phase</a></li>
+              <li><a href="#information-architecture">Info Architecture</a></li>
+              <li><a href="#branding">Branding</a></li>
+              <li><a href="#visual-design">Visual Design</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+          </div>
+       </div>
   <!--Case Study Overview-->
-    <section class="casestudy-overview">
+    <section class="casestudy-overview" id="intro">
       <div class="overview-casestudy">
         <h4>TheraShelf</h4>
         <h3>Do therapy differently.</h3>
@@ -81,10 +94,10 @@
       </div>
     </section>
   <!--Surveys-->
-    <section class="surveys">
-      <h3>The Design Process</h3>
+    <section class="surveys" id="discovery-phase">
+      <h3 class="segment">The Design Process</h3>
       <h4>Surveys</h4>
-      <p>A survey was conducted with 20 respondants to gain a better understanding of user’s experiences with cloud storage products. I included questions that explored specific motivations, feature rankings, and pain points.</p>
+      <p>A survey was conducted with 20 respondants to gain a better understanding of user’s experiences with cloud storage products. I included questions that explored motivations, rankings, and pain points.</p>
       <div class="survey-images">
         <img class="charts" src="Images/charts.svg" alt="Chart">
       </div>
@@ -96,9 +109,14 @@
   <!--Competitive Analysis-->
     <section class="competitive-analysis">
         <h4>Competitive Analysis</h4>
-        <img class="competitors" src="Images/competitor-logos-large.svg" alt="Competitor's Logos">
+        <div class="logos-large">
+          <img class="competitors" src="Images/competitor-logos-large.svg" alt="Competitor's Logos">
+        </div>
+        <div class="logos-mobile">
+          <img class="competitors" src="Images/mobile-logos.svg" alt="Competitor's Logos">
+        </div>
         <p>An analysis was completed with some popular cloud storage products that are already on the market. Google Docs provided the largest array of features that could be used for multi-disciplinary collaboration, scheduling, and content creation. However, none of these features are designed specifically for therapists. There is still a considerable amount of effort required by the user to accomplish healthcare goals with this product.</p>
-        <p>While Constant therapy is designed for the therapy population, it's primary function is to provide therapy materials to the clients. There are absolutely no collaboration features, and the user is unable to create new content or customize content to the needs of each client.</p>
+        <p class="analysis-paragraph">While Constant therapy is designed for the therapy population, it's primary function is to provide therapy materials to the clients. There are absolutely no collaboration features, and the user is unable to create new content or customize content to the needs of each client.</p>
         <h5>Key Takeaways</h5>
         <p>I was able to carve out some actionable insights from the data collected from the surveys and analysis of current cloud storage products. Key takeaways include:
         <div class="take-away">
@@ -115,7 +133,7 @@
       <img class="persona-two" src="Images/nadia-persona.svg" alt="Persona One">
     </section>
   <!--User Stories-->
-    <section class="user-stories">
+    <section class="user-stories" id="information-architecture">
       <h4>User Stories</h4>
       <p>I wrote user stories to account for the most important features per survey and SWOT analysis results. These stories were used to create the MVP that would eventually move into usability testing.</p>
       <div class="list-items">
@@ -131,7 +149,7 @@
       <h4>User Flows</h4>
       <p>I created user flows to represent how a user would interact with TheraSelf to accomplish the high priority user stories. From there, a site map was created to help organize the destinations for each of the user flows.</p>
       <div class="flow-image">
-        <img class="TheraShelf-Preview" src="Images/user-flow.svg" alt="User Flows">
+        <img class="TheraShelf-Preview" src="Images/user-flows.png" alt="User Flows">
       </div>
       <a href="Projects.html" class="button">View All User Flows</a>
     </section>
@@ -146,7 +164,7 @@
       </div>
     </section>
   <!--User Testing One-->
-    <section class="user-testing">
+    <section class="user-testing-one">
       <h4>Put it to the Test</h4>
       <p>Using my low fidelity wire frames for reference, I created a clickable prototype in Figma. I completed remote usability testing with three participants to assess the effectiveness of the product design. They were presented with the following tasks:</p>
       <div class="list-items">
@@ -162,11 +180,12 @@
         <p>There was a bit of an overhaul to the dashboard page. The bottom toolbar was removed completely and a hamburger menu was added instead. This design uses space more effectively on the mobile screen while eliminating the need for ambiguous icons. The metrics were replaced with buttons to allow direct access to recent and/or most used features. Visuals were added to supplement the text information.</p>
         <div class="revision">
           <img class="revisions" src="Images/testing-revisions.svg" alt="Usability Testing">
+          <img class="desktop-testing" src="Images/testing-revisions-large.svg" alt="Usability Testing">
           <a href="Projects.html" class="button">View Full Analysis</a>
         </div>
     </section>
   <!--Branding-->
-    <section class="branding">
+    <section class="branding" id="branding">
       <h4>Making the Brand</h4>
       <p>It’s time to define the TheraShelf brand. When making branding decisions, I carefully considered the target audience, user personas, and overarching goals of the product. The overall feel of the brand is intended to promote healing, growth, and simplicity. These traits are ideal for a health care product that centers around the rehabilitation process.</p>
       <h5>Color Palette & Icons</h5>
@@ -181,16 +200,8 @@
       </div>
       <a href="Projects.html" class="button">View Style Guide</a>
     </section>
-  <!--Preference Testing-->
-    <section class="preference-testing">
-      <h4>Preference Testing</h4>
-      <p>I considered different configurations for the menu on the client overview page. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation. The majority of users preferred the slide feature since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product. Check it out below.</p>
-      <div class="revision">
-        <img class="revisions" src="Images/preference-testing.svg" alt="Preference Testing">
-      </div>
-    </section>
   <!--Prototyping & Testing-->
-    <section class="prototyping">
+    <section class="prototyping" id="visual-design">
       <div class="Prototyping">
         <h4>Prototyping</h4>
         <p>A high fidelity prototype was created in Figma. I was careful to include the visual elements defined by the branding guidlines and preference testing. The visual elements were combined with the strategic layout of the product page to create an intuitive user experience. </p>
@@ -200,27 +211,31 @@
         </div>
       </div>
     </section>
-    <section class="user-testing">
+    <!--Preference Testing-->
+    <section class="preference-testing">
+      <h4>Preference Testing</h4>
+      <p>I considered different configurations for the menu on the client overview page. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation. The majority of users preferred the slide feature since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product. Check it out below.</p>
+      <div class="revision">
+        <img class="revisions" src="Images/preference-testing.svg" alt="Preference Testing">
+        <img class="desktop-testing" src="Images/preference-testing-large.svg" alt="Preference Testing">
+      </div>
+    </section>
+    <section class="user-testing-two">
       <div class="User-testing">
         <h4>Another Round of Testing</h4>
-        <p>I completed another round of remote usability testing with the high fidelity prototype. This time the tasks included:</p>
-        <div class="list-items">
-          <h6>Create a new account</h6>
-          <h6>View today’s visits</h6>
-          <h6>View a client’s chart</h6>
-          <h6>Assign a note to your client</h6>
-          <h6>Look up a therapist’s email address</h6>
-        </div>
+        <p>I completed another round of remote usability testing with the high fidelity prototype.</p>
+      </div>
         <h5>Searching for Content</h5>
         <p>I received some feedback about inconsistencies when searching for content. This was an easy fix. The search icon was eliminated and replaced with a full search bar on the file page. This change improves element consistency from page to page. It also ensures that the user expectations are met throughout the product.</p>
         <div class="revision">
           <img class="revisions" src="Images/testing-revisions-two.svg" alt="User Testing">
+          <img class="desktop-testing" src="Images/testing-revisions-two-large.svg" alt="User Testing">
           <a href="Projects.html" class="button">View Final Prototype</a>
         </div>
     </section>
   <!--Conclusion-->
-    <section class="conclusion">
-      <h3>Time to Wrap Things Up</h3>
+    <section class="conclusion" id="conclusion">
+      <h3 class="segment">Time to Wrap Things Up</h3>
       <div class="next">
         <h4>What's Next</h4>
         <p>Next steps would be to implement more of the low priority user stories to make a complete product with specialized features for health care professions. For example, adding templated notes will allow the users to be more efficient and organized when creating content. I would follow that up with another round of usability testing and revisions as needed.</p>
@@ -237,8 +252,7 @@
     <footer class="footer">
       <div class="closing-info">
         <h4 class="footer-slogan">Let's Get in Touch</h4>
-        <p class="footer-text">Thank you for checking out my work. I’m always open to questions or discussions about our UX world.
-        </p>
+        <p class="footer-text">Thanks for stopping by. Reach out at anytime!</p>
      </div>
       <ul class="social-media-links">
         <li>
@@ -257,6 +271,7 @@
     </footer>
    </div>
   </body>
+  <!--javascript for funtional hamburger menu-->
   <script>
     const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
