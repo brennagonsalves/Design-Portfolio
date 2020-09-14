@@ -215,14 +215,17 @@ footer p {
 
 /*hidden for mobile screens*/
 .wireframes-large,.prototype-image,
-.logos-large, .desktop-testing {
+.logos-large {
   display: none;
   }
 
 /*display on mobile screen*/
-.color-small, .logos-mobile,
-.revisions{
+.color-small, .logos-mobile {
   display: block;
+}
+
+.revisions {
+  padding: 4rem 2rem;
 }
 
 .wireframes-small,.prototype-image-small {
@@ -540,8 +543,8 @@ img {
 
 
 /*hide images on mobile screen*/
-.wireframes-small, .color-small, .prototype-image-small,
-.logos-mobile, .revisions {
+.wireframes-small, .color-small,
+.prototype-image-small, .logos-mobile {
   display: none;
 }
 
@@ -696,7 +699,7 @@ footer p {
 
 /*resizing*/
 .flow-image, .take-aways,
-.sketches, .wireframes-large  {
+.sketches, .wireframes-large, .revisions  {
   display: block;
   margin: 0 auto;
   max-width: 70%;
