@@ -583,6 +583,10 @@ img {
   width: 60%;
 }
 
+.button-styling {
+  margin-top: 5rem;
+}
+
 /*increase icon size on footer*/
 ul {
   font-size: 5rem;
