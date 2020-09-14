@@ -126,6 +126,10 @@ img {
   text-decoration: none;
 }
 
+.button-styling {
+  margin-top: 3rem;
+}
+
 .button:hover {
   background-color: #1E7D71;
 }
