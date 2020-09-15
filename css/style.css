@@ -560,7 +560,7 @@ img {
 
 /*image resizing for projects*/
 .color-large,.sketches,
-.flow-image{
+.flow-image, .take-aways{
   margin: 0 auto;
   width: 85%;
 }
@@ -702,15 +702,19 @@ footer p {
 
 /*resizing*/
 .flow-image, .take-aways,
-.sketches, .wireframes-large, .revisions  {
+.sketches, .wireframes-large {
   display: block;
   margin: 0 auto;
   max-width: 70%;
 }
 
-.charts, .persona-one, .persona-two {
+ .persona-one, .persona-two {
   margin: 0 auto;
   max-width: 40%;
+}
+
+.charts, .revisions  {
+  max-width: 55%;
 }
 
 /*testing item resizing*/
