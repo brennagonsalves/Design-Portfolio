@@ -170,14 +170,9 @@ img {
   text-align: center;
 }
 
-.therashelf {
-  background-color: #C8D8E8;
-}
-
-
 .responsibilities, .prototype-preview,
- .wireframe-images,.testing{
-  background-color: #F3F6FA;
+ .wireframe-images,.testing, .therashelf{
+  background-color: #DCE7F2;
 }
 
 /*footer styling begins*/
