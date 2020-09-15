@@ -368,6 +368,10 @@ footer p {
 /*media queries begin for tablet*/
 @media (min-width:768px) {
 
+body {
+  width: 100%;
+}
+
 /* sticky sidebar*/
 .sidebar {
   background-color: #fafafa;
@@ -470,7 +474,7 @@ img {
 .phonepic {
   grid-column: 8/13;
   grid-row: 1/5;
-  max-width: 80%;
+  max-width: 85%;
 }
 
 .button {
