@@ -705,6 +705,11 @@ footer p {
   margin: 5rem 15rem;
 }
 
+.user-testing h5 {
+  text-align: left;
+  padding-left: 11rem;
+}
+
 /*increase icon size on footer large screens*/
 ul {
   font-size: 7rem;
