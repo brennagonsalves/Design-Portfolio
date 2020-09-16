@@ -553,7 +553,7 @@ img {
 
 /*image resizing for projects*/
 .color-large,.sketches,
-.flow-image, .take-aways, .revisions{
+.flow-image, .take-aways{
   margin: 0 auto;
   width: 85%;
 }
