@@ -8,10 +8,6 @@ html {
   height: 100%;
 }
 
-body {
-  background-color: #fafafa;
-}
-
 section {
   text-align: center;
 }
@@ -169,8 +165,12 @@ img {
 }
 
 .responsibilities, .prototype-preview,
- .wireframe-images,.testing, .therashelf{
+ .wireframe-images, .therashelf{
   background-color: #DCE7F2;
+}
+
+.testing {
+  background-color: #F9FBFF;
 }
 
 /*footer styling begins*/
@@ -367,7 +367,6 @@ body {
 
 /* sticky sidebar*/
 .sidebar {
-  background-color: #fafafa;
   display: flex;
   height: 100vh;
   margin-bottom: 20.8rem;
@@ -694,6 +693,10 @@ footer p {
 
 .charts, .revisions {
   max-width: 55%;
+}
+
+.revisions {
+  padding: 7rem 0;
 }
 
 /*testing item resizing*/
