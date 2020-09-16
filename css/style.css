@@ -83,7 +83,7 @@ img {
 }
 
 video {
-  padding-top: 3rem;
+  padding: 4rem 0;
 }
 
 /*define grid area names*/
@@ -148,7 +148,7 @@ video {
 }
 
 /*image resizing*/
-.charts, .logos-mobile, .phonepic {
+.charts, .logos-mobile{
   max-width: 75%;
   margin: 0 auto;
 }
@@ -175,6 +175,12 @@ video {
 
 .testing {
   background-color: #F9FBFF;
+}
+
+.user-testing h5 {
+  line-height: 3rem;
+  padding: 2.5rem;
+  text-align: left;
 }
 
 /*footer styling begins*/
@@ -211,8 +217,7 @@ footer p {
 }
 
 /*hidden for mobile screens*/
-.wireframes-large,.prototype-image,
-.logos-large {
+.prototype-image, .logos-large {
   display: none;
   }
 
@@ -225,8 +230,12 @@ footer p {
   padding: 4rem 2rem;
 }
 
-.wireframes-small,.prototype-image-small {
+.prototype-image-small {
   display: block;
+  padding: 3rem 2rem;
+}
+
+.wireframe-sizing {
   padding: 3rem 2rem;
 }
 
@@ -426,6 +435,11 @@ img {
   padding: 3rem;
 }
 
+.user-testing h5 {
+  line-height: 3.5rem;
+  padding: 3rem 5rem;
+}
+
 /*grid for hero homepage (tablet)*/
 .hero {
   display: grid;
@@ -512,7 +526,7 @@ img {
 }
 
 
-.wireframes-large, .desktop-testing,
+.desktop-testing,
 .logos-large{
   display: block;
   padding-left: 4rem;
@@ -521,7 +535,7 @@ img {
 
 
 /*hide images on mobile screen*/
-.wireframes-small, .color-small,
+.color-small,
 .prototype-image-small, .logos-mobile {
   display: none;
 }
@@ -539,7 +553,7 @@ img {
 
 /*image resizing for projects*/
 .color-large,.sketches,
-.flow-image, .take-aways{
+.flow-image, .take-aways, .revisions{
   margin: 0 auto;
   width: 85%;
 }
@@ -689,7 +703,7 @@ footer p {
 
 /*resizing*/
 .flow-image, .take-aways,
-.sketches, .wireframes-large, .personas-img {
+.sketches,.personas-img, .wireframe-sizing {
   display: block;
   margin: 0 auto;
   max-width: 70%;
@@ -699,7 +713,7 @@ footer p {
   max-width: 55%;
 }
 
-.revisions {
+.revisions, .wireframe-sizing {
   padding: 7rem 0;
 }
 
