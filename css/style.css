@@ -82,6 +82,10 @@ img {
   padding: 4rem 0;
 }
 
+video {
+  padding-top: 3rem;
+}
+
 /*define grid area names*/
 .navbar {
   grid-area: navbar;
@@ -165,7 +169,7 @@ img {
 }
 
 .responsibilities, .prototype-preview,
- .wireframe-images, .therashelf{
+ .wireframe-images, .therashelf {
   background-color: #DCE7F2;
 }
 
@@ -715,6 +719,7 @@ ul {
   font-size: 7rem;
   text-align: center;
   }
+
 
 /*about page styling desktop*/
 .about-me {
