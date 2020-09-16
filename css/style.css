@@ -703,17 +703,21 @@ footer p {
 
 /*resizing*/
 .flow-image, .take-aways,
-.sketches,.personas-img, .wireframe-sizing {
+.sketches, .wireframe-sizing {
   display: block;
   margin: 0 auto;
   max-width: 70%;
+}
+
+.personas-img {
+  max-width: 60%;
 }
 
 .charts, .revisions {
   max-width: 55%;
 }
 
-.revisions, .wireframe-sizing {
+.wireframe-sizing {
   padding: 7rem 0;
 }
 
@@ -725,7 +729,7 @@ footer p {
 
 .user-testing h5 {
   text-align: left;
-  padding-left: 11rem;
+  padding: 4rem 0 4rem 11rem;
 }
 
 /*increase icon size on footer large screens*/
