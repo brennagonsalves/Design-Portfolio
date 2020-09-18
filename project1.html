@@ -54,7 +54,9 @@
           <img class="therashelf-preview" src="images/therashelf-preview.png" alt="TheraShelf Preview">
         </div>
       </div>
-      <a href="https://www.figma.com/proto/OuSZz0mue6LWkseUjGTmkv/TheraShelf-Prototype-Final?node-id=1%3A1406&scaling=scale-down" target="_blank" class="button">View Prototype</a>
+      <div class="button">
+        <a href="https://www.figma.com/proto/OuSZz0mue6LWkseUjGTmkv/TheraShelf-Prototype-Final?node-id=1%3A1406&scaling=scale-down" target="_blank" class="button-styling">View Prototype</a>
+      </div>
     </section>
 
   <!--Case Study Segments-->
@@ -103,10 +105,11 @@
 
   <!--Surveys-->
     <section class="surveys" id="discovery-phase">
-      <h3 class="segment">The Design Process</h3>
       <h4>Surveys</h4>
       <p>A survey was conducted with 20 respondants to gain a better understanding of user experiences with cloud storage products. I included questions that explored motivations, rankings, and pain points. The qualitative data collected during surveys would drive design decisions down the road. Important findings include:</p>
-      <img class="charts" src="images/charts.svg" alt="Chart">
+      <figure>
+        <img class="charts" src="images/charts.svg" alt="Chart">
+      </figure>
     </section>
 
   <!--Competitive Analysis-->
@@ -116,10 +119,10 @@
         <img class="logos-mobile" src="images/mobile-logos.svg" alt="Competitor's Logos">
         <p>An analysis was completed with some popular cloud storage products that are already on the market. Google Docs provided the largest array of features that could be used for therapy tasks. However, none of these features address therapist's needs head on. There is still a considerable amount of effort required by the user to accomplish healthcare goals with this product.</p>
         <p class="analysis-paragraph">While Constant therapy is designed for the therapy population, it's primary function is to provide therapy materials to the clients. There are absolutely no collaboration features, and the user is unable to create new content or customize content to the needs of each client.</p>
-        <div class="button-styling">
-        <a href="images/competitive-analysis.pdf" target="_blank" class="button">View Full Analysis</a>
+        <div class="button">
+          <a href="images/competitive-analysis.pdf" target="_blank" class="button-styling">View Full Analysis</a>
         </div>
-        <h5>Key Takeaways</h5>
+        <h5>Key Takeaways from the Discovery Phase</h5>
         <p>I was able to carve out some actionable insights from the data collected from the surveys and analysis of current cloud storage products. Key takeaways include:
         <img class="take-aways" src="images/take-aways.svg" alt="take aways">
     </section>
@@ -127,7 +130,7 @@
   <!--Personas-->
     <section class="personas">
       <div class="intro-content">
-        <h4>Personas</h4>
+        <h4>Creating User Personas</h4>
         <p>After completing my initial survey analysis, I had follow up conversations with two of the respondants. I gained a more thorough understanding of their frustations, goals, and attitudes towards cloud storage products. I developed personas to represent an inclusive and full spectrum representation of TheraShelf users. The personas will be referenced frequently during the design process to maintain true user emapthy.</p>
       </div>
       <img class="personas-img"src="images/personas.svg" alt="personas">
@@ -137,13 +140,13 @@
     <section class="user-stories" id="information-architecture">
       <h4>User Stories</h4>
       <p>I wrote user stories to account for the most important features per survey and SWOT analysis results. These stories were used to create the MVP that would eventually move into usability testing.</p>
-      <div class="list-items">
-        <h6>I want to log into my account</h6>
-        <h6>I want to view today's schedule</h6>
-        <h6> I want to assign materials to a client</h6>
-        <h6>I want to view client medical records</h6>
-        <h6>I want to contact fellow therapists </h6>
-      </div>
+      <ul class="list-items">
+        <li>I want to log into my account</li>
+        <li>I want to view today's schedule</li>
+        <li> I want to assign materials to a client</li>
+        <li>I want to view client medical records</li>
+        <li>I want to contact fellow therapists </li>
+      </ul>
     </section>
 
   <!--User Flows-->
@@ -151,7 +154,9 @@
       <h4>User Flows</h4>
       <p>I created user flows to represent how a user would interact with TheraSelf to accomplish the high priority user stories. From there, a site map was created to help organize the destinations for each of the user flows.</p>
       <img class="flow-image" src="images/user-flows.png" alt="User Flows">
-      <a href="#" class="button">View All User Flows</a>
+      <div class="button">
+        <a href="#" class="button-styling">View All User Flows</a>
+      </div>
     </section>
 
   <!--Wireframes-->
@@ -159,9 +164,9 @@
       <h4>Wireframes</h4>
       <p>It was finally time to put pen to paper. I started by sketching out possible layouts for the product pages based on the main user flows. Rapid iterations allowed me to make some initial design decisions quickly and efficiently. I then created digital wireframes for my first round of usability testing.</p>
       <img class="sketches" src="images/sketches.svg" alt="sketches">
-      <div class="wireframe-images">
+      <figure class="wireframe-group">
         <img class="wireframe-sizing" src="images/wireframes.png" alt="Wireframes">
-      </div>
+      </figure>
     </section>
 
     <!--Branding-->
@@ -178,29 +183,33 @@
         <div class="typography">
           <img class="typography" src="images/type-large.svg" alt="Typography">
         </div>
-        <a href="images/style-guide.pdf" target="_blank" class="button">View Style Guide</a>
+        <div class="button">
+            <a href="images/style-guide.pdf" target="_blank" class="button-styling">View Style Guide</a>
+        </div>
       </section>
 
   <!--User Testing One-->
     <section class="user-testing">
       <h4>Put it to the Test</h4>
       <p>Using my low fidelity wire frames for reference, I created a clickable prototype in Figma. I completed remote usability testing with three participants to assess the effectiveness of the product design. They were presented with the following tasks:</p>
-      <div class="list-items">
-        <h6>Create a new account</h6>
-        <h6>View today’s visits</h6>
-        <h6>View a client’s chart</h6>
-        <h6>Assign a note to your client</h6>
-      </div>
-      <h5>Problem 1: Difficulty navigating to high priority features from dashboard</h5>
+      <ul class="list-items">
+        <li>Create a new account</li>
+        <li>View today’s visits</li>
+        <li>View a client’s chart</li>
+        <li>Assign a note to your client</li>
+      </ul>
+      <h5>Problem 1: Access to high priority features</h5>
       <p>There was a bit of an overhaul to the dashboard page. The bottom toolbar was removed completely and a hamburger menu was added instead. The second iteration uses space more effectively and eliminates the need for ambiguous buttons. The metrics were replaced with buttons to allow direct access to recent and  most used features.</p>
-        <div class="testing">
+        <figure>
+          <figcaption>The dashboard before and after user testing</figcaption>
           <img class="revisions" src="images/testing-revisions.png" alt="Usability Testing">
-        </div>
-        <h5>Problem 2: The client page contains bulky, time consuming diagnostics</h5>
+        </figure>
+        <h5>Problem 2: Bulky, time consuming diagnostics</h5>
         <p>The revised client screen better organizes therapy information by creating a separate summary tab. The most important diagnostic information is highlighted on this page to maximize therapist productivity. Lengthier, full scale assessment information is now housed under the therapy tab.</p>
-          <div class="testing">
-            <img class="revisions" src="images/testing-revisions-three.png" alt="Usability Testing">
-          </div>
+        <figure>
+          <figcaption>The client page before and after user testing</figcaption>
+          <img class="revisions" src="images/testing-revisions-three.png" alt="Usability Testing">
+        </figure>
     </section>
 
   <!--Prototyping & Testing-->
@@ -212,31 +221,34 @@
 
   <!--User Testing Round Two-->
       <div class="user-testing">
-        <h5>Problem 3: Returning to the dashboard and user account page</h5>
+        <h5>Problem 3: Returning to the dashboard</h5>
         <p>Users had no easy way to return to the dashboard and user account after navigating away from this page. A home link was added to the menu options when the hamburger menu is clicked. The user can now return to the dashboard quickly from any other product page.</p>
       </div>
-      <div class="testing">
+      <figure>
+          <figcaption>Navigation menu before and after user testing</figcaption>
           <img class="revisions" src="images/testing-revisions-two.png" alt="User Testing">
-      </div>
+      </figure>
       <div class="preference-testing">
         <h4>Preference Testing</h4>
         <p>I considered different configurations for the menu on the client overview page. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation. The majority of users preferred the slide feature since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product.</p>
-        <div class="testing">
+        <figure>
+          <figcaption>Screens presented during preference testing</figcaption>
           <img class="revisions" src="images/preference-testing.png" alt="Preference Testing">
-        </div>
+        </figure>
       </div>
     </section>
 
   <!--final prototype-->
     <section class="final-prototype">
-      <h4> The Final Prototype </h4>
       <img class="therashelf-solution" src="images/therashelf-solution.png" alt="TheraShelf Solution">
-      <a href="https://www.figma.com/proto/OuSZz0mue6LWkseUjGTmkv/TheraShelf-Prototype-Final?node-id=1%3A1406&scaling=scale-down" target="_blank" class="button">View Final Prototype</a>
+      <div class="button">
+        <a href="https://www.figma.com/proto/OuSZz0mue6LWkseUjGTmkv/TheraShelf-Prototype-Final?node-id=1%3A1406&scaling=scale-down" target="_blank" class="button-styling">View Final Prototype</a>
+      </div>
     </section>
 
   <!--Conclusion-->
     <section class="conclusion" id="conclusion">
-      <h3 class="segment">Time to Wrap Things Up</h3>
+      <h3> Wrapping Things Up</h3>
       <div>
         <h4>What's Next</h4>
         <p>Next steps would be to implement more of the low priority user stories to make a complete product with specialized features for health care professions. For example, adding templated notes will allow the users to be more efficient and organized when creating content. I would follow that up with another round of usability testing and revisions as needed.</p>
@@ -251,7 +263,7 @@
       </div>
     </section>
     </div>
-    
+
 <!--Footer-->
     <footer class="footer">
       <h4>Let's Get in Touch</h4>
