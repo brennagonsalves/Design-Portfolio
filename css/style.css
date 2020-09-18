@@ -418,7 +418,8 @@ figure, img, video{
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 5rem 0;
+  margin-right: 0;
+  padding: 8rem 0;
 }
 
 .intro {
@@ -428,7 +429,12 @@ figure, img, video{
 
 .hero-image {
   grid-column: 8/12;
+  padding: 0;
   width: 100%;
+}
+
+.hero h1 {
+  padding-top: 0;
 }
 
 /*grid for project1 intro (tablet)*/
@@ -596,6 +602,7 @@ figure, img, video{
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  padding: 15rem 0;
 }
 
 .intro {
