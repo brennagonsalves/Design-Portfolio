@@ -142,7 +142,8 @@ figcaption {
   text-decoration: none;
 }
 
-.button-styling:hover {
+.button-styling:hover,
+.button-styling-overview:hover {
   background-color: #1E7D71;
 }
 
