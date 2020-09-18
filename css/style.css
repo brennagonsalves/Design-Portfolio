@@ -38,7 +38,7 @@ h2 {
 h3 {
   color: #555C6E;
   font-family: 'Fira Sans';
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 3.9rem;
   padding-top: 2rem;
@@ -47,9 +47,9 @@ h3 {
 h4 {
   color: #555C6E;
   font-family: 'Fira Sans';
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
 }
 
 
@@ -125,7 +125,7 @@ figcaption {
   "footer";
 }
 
-.button{
+.button, .button-therashelf-overview{
   display: block;
   text-align: center;
 }
@@ -162,6 +162,19 @@ figcaption {
   background-color: #DCE7F2;
 }
 
+.responsibilities{
+  text-align: center;
+}
+
+
+.final-prototype {
+  padding: 3.5rem 0;
+}
+
+.closing-para, .conclusion {
+  padding-bottom: 3.5rem;
+}
+
 /*footer styling begins*/
 footer {
   text-align: center;
@@ -177,10 +190,6 @@ footer p {
   color: white;
   text-align: center;
   padding: 0 3rem;
-}
-
-.responsibilities{
-  text-align: center;
 }
 
 /*footer icon styling*/
@@ -529,7 +538,7 @@ h2 {
 }
 
 /*spacing correction before footer*/
-.closing-para {
+.closing-para, .conclusion {
   padding-bottom: 4rem;
 }
 
@@ -692,7 +701,7 @@ figure, img, video{
   margin: 0 10rem;
 }
 
-.closing-para {
+.closing-para, .conclusion {
   padding-bottom: 5rem;
 }
 
