@@ -93,18 +93,13 @@ figcaption {
   color: gray;
   font-family: 'Didact Gothic', sans-serif;
   font-size: 1.6rem;
-  padding-top: .2rem;
+  padding-top: 2rem;
   text-align: center;
 }
 
 /*define grid areas*/
 .navbar {
   grid-area: navbar;
-}
-
-.sidebar {
-  display: none; /*hidden for mobile screens*/
-  grid-area: sidebar;
 }
 
 .main {
@@ -120,7 +115,6 @@ figcaption {
   display: grid;
   grid-template-areas:
   "navbar"
-  "sidebar"
   "main"
   "footer";
 }
@@ -266,14 +260,6 @@ footer p {
   text-decoration: none;
 }
 
-/*sidebar for page navigation*/
-.page-navigation li a {
-  color: #4f4f4f;
-  font-family: 'Didact Gothic', sans-serif;
-  font-size: 1.7rem;
-  text-decoration: none;
-}
-
 .navbar-links li a:hover,
 .page-navigation li a:hover {
   color: #2BAF9E;
@@ -346,18 +332,7 @@ body {
 }
 
 section{
-  margin-right:5rem;
-}
-
-/* sticky sidebar*/
-.sidebar {
-  display: flex;
-  height: 100vh;
-  margin-bottom: 20.8rem;
-  top:0;
-  padding-top: 3rem;
-  padding-left: 4rem;
-  position: sticky;
+  padding:0;
 }
 
 h1 {
@@ -480,11 +455,11 @@ figure, img, video{
 
 /*grid for project1 (tablet)*/
 .container-project1 {
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 8fr 1fr;
   grid-template-areas:
-  "navbar navbar"
-  "sidebar main"
-  "footer footer";
+  "navbar navbar navbar"
+  ". main ."
+  "footer footer footer";
 }
 
 /*subgrid for responsbilities section*/
@@ -518,13 +493,9 @@ figure, img, video{
 
 /*image resizing for projects*/
 .color-large, .flow-image,
-.take-aways, .charts, .personas,
+.take-aways, .charts, .,
 .revisions {
   max-width: 85%;
-}
-
-.take-aways ul {
-  font-size: 2.1rem;
 }
 
 /*spacing for about page*/
@@ -535,13 +506,15 @@ figure, img, video{
 .about-me h3 {
   font-size: 3rem;
   padding-top: 4rem;
-  margin: 0 5rem;
+  text-align: center;
+}
+
+.about-me h4 {
   text-align: center;
 }
 
 .about-me p {
   padding-top: 3rem;
-  margin: 0 5rem;
 }
 
 /*spacing correction before footer*/
@@ -568,7 +541,7 @@ ul {
 @media (min-width:1280px) {
 
 section{
-  margin: 0 10rem;
+  margin: 0;
 }
 
 /*spacing correction for intro page*/
@@ -603,7 +576,7 @@ p {
 }
 
 figure, img, video{
-  padding-top: 6rem;
+  padding-top: 4rem;
 }
 
 /*grid for hero section homepage (desktop)*/
@@ -674,33 +647,33 @@ figure, img, video{
 
 /*grid for therashelf project (desktop)*/
 .container-project1 {
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
   "navbar navbar"
-  "sidebar main"
+  ". main ."
   "footer footer";
 }
 
 /*project 1 desktop*/
 
 /*image resizing for desktop*/
-.charts, .personas {
+.charts {
   display: block;
   margin: 0 auto;
   max-width: 70%;
 }
 
-.inservice-photo, .take-aways {
+.take-aways {
   width: 60%;
+}
+
+.inservice-photo {
+  width: 90%;
 }
 
 /*about-me styling*/
 .about-me h3 {
   text-align: center;
-}
-
-.about-me p {
-  margin: 0 10rem;
 }
 
 .closing-para, .conclusion {
