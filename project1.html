@@ -29,21 +29,6 @@
             </ul>
           </div>
       </nav>
-
-  <!--Sidebar for large screens-->
-      <div class="sidebar">
-        <div class="page-navigation">
-            <ul>
-              <li><a href="#intro">Project Intro</a></li>
-              <li><a href="#discovery-phase">Discovery Phase</a></li>
-              <li><a href="#information-architecture">Info Architecture</a></li>
-              <li><a href="#branding">Branding</a></li>
-              <li><a href="#visual-design">Visual Design</a></li>
-              <li><a href="#conclusion">Conclusion</a></li>
-            </ul>
-          </div>
-       </div>
-
   <!--Case Study Overview-->
   <div class="main">
     <section class="casestudy-overview" id="intro">
@@ -89,14 +74,24 @@
   <!--The Problem-->
     <section class="problem">
       <h4>The Problem</h4>
-      <p>There has been an abrupt shift to a remote service model for rehabilitation therapies since the COVID19 outbreak. It is difficult to track clients, manage caseloads, and organize therapy materials without the physical office space.</p>
+      <p>There has been an abrupt shift to a remote service model for rehabilitation therapies since the COVID19 outbreak. The lack of physical office spaces created some headaches for therapists.</p>
+          <ol class="list-items">
+            <li>Therapy daily tasks are scattered on several different products</li>
+            <li>Session prep is time consuming, requiring work off the clock</li>
+            <li>Hard to collaborate with multi-disciplinary team outside of the office space</li>
+          </ol>
     </section>
 
   <!--The Solution-->
     <section class="solution">
       <div>
         <h4>The Solution</h4>
-        <p>TheraShelf includes features that allow therapists to be more efficient and productive during the work week. It streamlines the most important therapy tasks while promoting collaboration with the multi-disciplinary team. All done remotely.</p>
+        <p>TheraShelf streamlines the most important therapy tasks while promoting collaboration with the multi-disciplinary team. Some of TheraShelf's most important benefits include:</p>
+          <ol class="list-items">
+            <li>Improves therapy productivity by consolidating tasks into one product</li>
+            <li>Allows for better work-life balance by simplifing session prep and visit scheduling</li>
+            <li>Contributes to higher employee satisfaction and lower burnout rates</li>
+          </ol>
         <video width="300" height="535" controls autoplay muted loop>
             <source src="images/therashelf-solution.mp4" type="video/mp4">
             <p>Your browser doesn't support HTML5 video.</p>
@@ -121,7 +116,7 @@
         <div class="button">
           <a href="images/competitive-analysis.pdf" target="_blank" class="button-styling">View Full Analysis</a>
         </div>
-        <h5>Key Takeaways From Research</h5>
+        <h5>Where do we go from here?</h5>
         <p>I was able to carve out some actionable insights from the data collected from the surveys and analysis of current cloud storage products. Key takeaways include:
         <img class="take-aways" src="images/take-aways.svg" alt="take aways">
     </section>
@@ -140,11 +135,9 @@
       <h4>User Stories</h4>
       <p>I wrote user stories to account for the most important features per survey and SWOT analysis results. These stories were used to create the MVP that would eventually move into usability testing. High priority stories include:</p>
       <ul class="list-items">
-        <li>I want to log into my account</li>
         <li>I want to view today's schedule</li>
-        <li> I want to assign materials to a client</li>
+        <li> I want to add a new visit</li>
         <li>I want to view client medical records</li>
-        <li>I want to contact fellow therapists </li>
       </ul>
     </section>
 
@@ -155,89 +148,86 @@
       <img class="flow-image" src="images/user-flows.png" alt="User Flows">
     </section>
 
-  <!--Wireframes-->
-    <section class="wireframes">
-      <h4>Wireframes</h4>
-      <p>It was finally time to put pen to paper. I started by sketching out possible layouts for the product pages based on the main user flows. Rapid iterations allowed me to make some initial design decisions quickly and efficiently. I then created digital wireframes for my first round of usability testing.</p>
-      <figure>
-        <figcaption>Rapid iterations with initial sketches</figcaption>
-        <img class="sketches" src="images/sketches.jpg" alt="sketches">
-      </figure>
-      <figure>
-        <img class="wireframe-sizing" src="images/wireframes.png" alt="Wireframes">
-      </figure>
-    </section>
-
     <!--Branding-->
       <section class="branding" id="branding">
         <h4>Making the Brand</h4>
-        <p>When making branding decisions, I carefully considered the target audience, user personas, and overarching goals of the product. The overall feel of the brand is intended to promote healing, growth, and simplicity. These traits are ideal for a health care product that centers around the rehabilitation process.</p>
-        <h5>Color Palette & Icons</h5>
+        <p>The overall feel of the brand is intended to promote healing, growth, and calmness. This is achieved through a color palette comprised primarily of blue and green tones. Geometric fonts and clean icons also communicate simplicity throughout the product.</p>
+        <h5>Brand Elements</h5>
         <div class="color-large">
           <img class="color-large" src="images/color-palette-large.svg" alt="Color Palette">
-        </div>
-        <p>The primary color for TheraShelf is a bright blue to represent trust, tranqulity, and knowledge. Several of the secondary colors also fall in the blue and green families to communicate growth and healing.</p>
-        <h5>Typography</h5>
-        <p>Both the primary brand typeface and complementary typeface are geometric sans-serif fonts. The typefaces are clean and easy to read at all sizes. It translates well from desktop to a mobile platform.</p>
-        <div class="typography">
-          <img src="images/type-large.svg" alt="Typography">
         </div>
         <div class="button">
             <a href="images/style-guide.pdf" target="_blank" class="button-styling">View Style Guide</a>
         </div>
       </section>
 
+  <!--Sketches-->
+    <section class="sketches">
+      <h4>Sketches</h4>
+      <p>It was finally time to put pen to paper. I started by sketching out possible layouts for the product pages based on the user flows. Rapid iterations allowed me to work through some initial design challenges in a quick and efficient manner.</p>
+      <figure>
+        <img class="sketches" src="images/sketches.jpg" alt="sketches">
+        <figcaption>Rapid iterations with initial sketches</figcaption>
+      </figure>
+    </section>
+
+  <!--Wireframes-->
+    <section class="wireframes">
+      <h4>Wireframes</h4>
+      <p>Using my sketches for reference, I created digital wireframes in Figma. The dashboard serves as an anchor point for product navigation. The user flow was designed to mirror an intuitive therapy process, starting with chart review and ending with visit scheduling.</p>
+      <figure>
+        <img class="wireframe-sizing" src="images/wireframes.png" alt="Wireframes">
+        <figcaption>Accessing charts and scheduling iteration 1</figcaption>
+      </figure>
+    </section>
+
   <!--User Testing One-->
     <section class="user-testing">
-      <h4>Put it to the Test</h4>
-      <p>Using my low fidelity wire frames for reference, I created a clickable prototype in Figma. I completed remote usability testing with three participants to assess the effectiveness of the product design. They were presented with the following tasks:</p>
-      <ul class="list-items">
-        <li>Create a new account</li>
-        <li>View today’s visits</li>
-        <li>View a client’s chart</li>
-        <li>Assign a note to your client</li>
-      </ul>
-      <h5>Problem 1: Access to high priority features</h5>
-      <p>There was a bit of an overhaul to the dashboard page. The bottom toolbar was removed completely and a hamburger menu was added instead. The second iteration uses space more effectively and eliminates the need for ambiguous buttons. The metrics were replaced with buttons to allow direct access to recent and  most used features.</p>
+      <h4>Usability Testing</h4>
+      <p>Remote usability testing was completed with several participants to assess the effectiveness of collective design decisions up to this point. Let's take a look at some userfeedback and subsequent design revisions.</p>
+      <h5> Problem 1: Inefficient dashboard configuration<h5>
+      <p>It took users longer than anticipated to locate high priority features. There were wasteful clicks around the dashboard page before reaching the medical records. The extra time searching through the dashbard hinders therapy productivity.</p>
+      <h5>Iteration 2<h5>
+      <p>Dashboard elements were reconfigured to better communicate hierarchy of information. Features appear in order of importance and mirror the natural progression of therapy tasks. The new configuration allows therapists to maximize productivity through quick navigation.</p>
         <figure>
-          <figcaption>The dashboard before and after user testing</figcaption>
-          <img class="revisions" src="images/testing-revisions.png" alt="Usability Testing">
+          <img class="revisions" src="images/client-records-2.png" alt="Usability Testing">
         </figure>
+        <p>A hamburger menu replaces the bottom toolbar to use space more effectively and eliminate ambiguous toolbar buttons. A card layout was added to the middle of the page for direct access to high priority features. </p>
         <h5>Problem 2: Time consuming diagnostics</h5>
-        <p>The revised client screen better organizes therapy information by creating a separate summary tab. The most important diagnostic information is highlighted on this page to maximize therapist productivity. Lengthier, full scale assessment information is now housed under the therapy tab.</p>
+        <p>It took too long for users to identify the most important diagnostic information from client medical records. The full scale reports are lengthy to read and take up too much space on the screen.</p>
+        <h5>Iteration 2</h5>
+        <p>The medical records summary tab now highlights key diagnostics like standardized tests and diagnoses at a quick glance. The full length version of each assessment may be viewed under a separate tab when therapists have extra time. These revisions improve the communication flow between the multi-disciplinary team.</p>
         <figure>
-          <figcaption>The client page before and after user testing</figcaption>
-          <img class="revisions" src="images/testing-revisions-three.png" alt="Usability Testing">
+          <img class="revisions" src="images/testing-revisions-2.png" alt="Usability Testing">
+        </figure>
+        <h5>Problem 3: Slow scheduling process</h5>
+        <p>The schedule page from the first iteration requires a significant amount of free typing. This process may also require the therapist to navigate back to a different page to double check information like proper spelling of names.</p>
+        <h5>Iteration 2</h5>
+        <p>The revisions minimize the need for free typing information like client names. It also streamlines scheduling by allowing therapist to select only available time slots for their new visit. The entire scheduling process now requires just a few clicks to complete.</p>
+        <figure>
+          <img class="revisions" src="images/testing-revisions-3.png" alt="Usability Testing">
         </figure>
     </section>
 
   <!--Prototyping & Testing-->
     <section class="prototyping" id="visual-design">
       <div>
-        <h4>Prototyping & More Testing</h4>
-        <p>A high fidelity prototype was created in Figma. I was careful to include the visual elements defined by the branding guidlines and revisions from the first round of user testing. Another round of remote usability testing was completed. </p>
+        <h4>Prototyping & Preference Testing</h4>
+        <p>A high fidelity prototype was created in Figma. I was careful to include the visual elements defined by the branding guidlines and revisions from the first round of user testing.</p>
       </div>
-
-  <!--User Testing Round Two-->
-      <div class="user-testing">
-        <h5>Problem 3: Returning to the dashboard</h5>
-        <p>Users had no easy way to return to the dashboard and user account after navigating away from this page. A home link was added to the menu options when the hamburger menu is clicked. The user can now return to the dashboard quickly from any other product page.</p>
-      </div>
-      <figure>
-          <figcaption>Navigation menu before and after user testing</figcaption>
-          <img class="revisions" src="images/testing-revisions-two.png" alt="User Testing">
-      </figure>
       <div class="preference-testing">
-        <h4>Preference Testing</h4>
-        <p>I considered different configurations for the menu on the client overview page. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation. The majority of users preferred the slide feature since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product.</p>
+        <p>I considered different configurations for the menu on the client overview page. Preference testing was completed to see which visual element was preferred for this product. Users were able to choose between the slide feature or tab menu to highlight content pages during navigation.</p>
         <figure>
           <figcaption>Screens presented during preference testing</figcaption>
           <img class="revisions" src="images/preference-testing.png" alt="Preference Testing">
         </figure>
+        <p>The majority of users preferred the slide feature (left image) since it was clearer and more eye catching compared to the tab menu. The design element was implemented throughout the product.</p>
       </div>
 
       <!--final prototype-->
         <div class="final-prototype">
+          <h4> The Final Design</h4>
+          <p>In the end, TheraShelf consists of design elements that are simple and clear for users to navigate. The features aim to streamline the most important therapy tasks to maximize therapy productivity remotely.</p>
           <img class="therashelf-solution" src="images/therashelf-solution.png" alt="TheraShelf Solution">
           <div class="button">
             <a href="https://www.figma.com/proto/OuSZz0mue6LWkseUjGTmkv/TheraShelf-Prototype-Final?node-id=1%3A1406&scaling=scale-down" target="_blank" class="button-styling">View Final Prototype</a>
@@ -248,10 +238,6 @@
   <!--Conclusion-->
     <section class="conclusion" id="conclusion">
       <h3> Wrapping Things Up</h3>
-      <div>
-        <h4>What's Next</h4>
-        <p>Next steps would be to implement more of the low priority user stories to make a complete product with specialized features for health care professions. For example, adding templated notes will allow the users to be more efficient and organized when creating content. I would follow that up with another round of usability testing and revisions as needed.</p>
-      </div>
       <div class="take-aways-conclusion">
         <h4>My Take Aways</h4>
         <p>This project alowed me to mature and gain better footing as a UX designer. My biggest takeaways include:
