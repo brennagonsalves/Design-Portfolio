@@ -97,6 +97,14 @@ figcaption {
   text-align: center;
 }
 
+ol {
+  color: #4f4f4f;
+  font-family: 'Didact Gothic';
+  font-size: 1.9rem;
+  line-height: 2.9rem;
+  padding-top: 2rem;
+}
+
 /*define grid areas*/
 .navbar {
   grid-area: navbar;
@@ -391,6 +399,12 @@ figure, img, video{
   margin-left: 5rem;
 }
 
+ol li {
+  font-size: 2.1rem;
+  margin-left: 5rem;
+  padding-top: 2rem;
+}
+
 /*grid for hero homepage (tablet)*/
 .hero {
   display: grid;
@@ -493,7 +507,7 @@ figure, img, video{
 
 /*image resizing for projects*/
 .color-large, .flow-image,
-.take-aways, .charts, .,
+.take-aways, .charts,
 .revisions {
   max-width: 85%;
 }
@@ -523,7 +537,7 @@ figure, img, video{
 }
 
 /*footer resizing (tablet)*/
-ul {
+.footer ul {
   font-size: 5rem;
   text-align: center;
   }
@@ -539,10 +553,6 @@ ul {
 
 /*media query for desktop*/
 @media (min-width:1280px) {
-
-section{
-  margin: 0;
-}
 
 /*spacing correction for intro page*/
 .hero, .therashelf {
@@ -571,8 +581,9 @@ p {
   line-height: 3.2rem;
 }
 
-.responsibilities {
-  margin: 0 8rem;
+ol {
+  font-size: 2.1rem;
+  line-height: 3.2rem;
 }
 
 figure, img, video{
@@ -657,18 +668,14 @@ figure, img, video{
 /*project 1 desktop*/
 
 /*image resizing for desktop*/
-.charts {
+.charts, .personas-img {
   display: block;
   margin: 0 auto;
   max-width: 70%;
 }
 
-.take-aways {
-  width: 60%;
-}
-
 .inservice-photo {
-  width: 90%;
+  max-width: 90%;
 }
 
 /*about-me styling*/
