@@ -397,8 +397,8 @@ hr {
   background-color: #1DA373;
 }
 
-.therashelf-project:hover .overlay, .therashelf-project:active .overlay,
- .catalyst-project:hover .overlay-2, .catalyst-project:active .overlay-2{
+.therashelf-project:hover .overlay,
+.catalyst-project:hover .overlay-2{
   opacity: .95;
 }
 
@@ -560,8 +560,8 @@ footer {
 
 /*social media links*/
 .hero li {
-  font-size:
-  padding-left: 2rem;
+  font-size: 3rem;
+  padding-left: 1.5rem;
 }
 
 .footer li {
@@ -678,6 +678,7 @@ ol {
 }
 
 footer p {
+  font-size: 1.9rem;
   padding: 5rem 0 0 0;
 }
 
@@ -698,6 +699,11 @@ video {
   padding-top: 0;
 }
 
+.text {
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+
 .myrole h4, .deliverables h4, .tools h4 {
   padding-left: 0;
   padding-bottom: 2rem;
@@ -714,10 +720,11 @@ video {
 .hero li {
   font-size: 4rem;
   padding-left: 2.5rem;
+  padding-top: 0;
 }
 
 .footer li {
-  padding: 5rem 0 5rem 1rem;
+  padding: 6rem 0 5rem 1rem;
 }
 
 .overview p
@@ -732,7 +739,7 @@ video {
 
 /*grid for hero section homepage (desktop)*/
 .hero {
-  padding: 15rem 0;
+  padding: 15rem 0 5rem 0;
 }
 
 .button-styling {
@@ -749,7 +756,7 @@ video {
 
 /*grid for footers*/
 footer {
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 7fr 1fr;
   grid-template-areas:
   "copyright links";
 }
