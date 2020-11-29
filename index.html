@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c62ae369ea.js" crossorigin="anonymous"></script>
   <title> Portfolio | Brenna Gonsalves</title>
 </head>
-  <body>
-  <div class="container-home">
+  <body class="homepage">
 
-<!--Navbar -->
+    <!--Navbar -->
     <nav class="navbar">
-        <a href="index.html" class="logo"><img src="images/logo.svg" alt="logos"></a>
+        <a href="index.html" class="logo">BRENNA GONSALVES</a>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -23,48 +21,36 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="images/brennagonsalves-resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="index.html#work">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="images/brennagonsalves-resume.pdf" target="_blank">RESUME</a></li>
           </ul>
         </div>
     </nav>
 
-<!--Intro -->
-    <section class="hero">
-      <div class="intro">
-        <h1>Hey there, I'm Brenna</h1>
-        <h2>Speech therapist turned UX/UI designer. The future is digital, but people will always come first. I craft impactful solutions for those people.</h2>
-      </div>
-      <ul class="links">
-        <li>
-          <a href="https://www.linkedin.com/in/brennagonsalves/">
-          <i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/brennagonsalves">
-          <i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="mailto:brennagonsalves@gmail.com">
-          <i class="fas fa-envelope"></i></a>
-        </li>
-      </ul>
+  <!--hero-->
+    <section class="introduction">
+      <h4>Hey there, I'm Brenna! Speech Therapist turned UX/UI Designer. The future is digital but people will always come first. I craft impactful solutions for those people.</h4>
     </section>
 
 <!--projects-->
-      <a href="project2.html"><div class="catalyst-project" id="work">
-        <img class="catalyst-screens"src="images/catalyst-preview.png" alt="Therashelf">
-        <div class="overlay-2">
-          <div class="text">Catalyst: STEM Learning Product</div>
-        </div>
-      </div></a>
+    <div class="container-projects">
+      <section class="project-one">
+        <a href="project2.html"><div class="catalyst-project" id="work">
+          <img class="catalyst-screens" src="images/catalyst-preview.png" alt="catalyst">
+          <h4>CATALYST</h4>
+          <p>Creating a STEM learning product</p>
+        </div></a>
+      </section>
 
-        <a href="project1.html"><div class="therashelf-project">
-          <img class="therashelf-screens"src="images/therashelf.png" alt="Therashelf">
-        <div class="overlay">
-          <div class="text">TheraShelf: Workspace Solution for Remote Therapists</div>
-        </div> </div></a>
+      <section class="project-two">
+          <a href="project1.html"><div class="therashelf-project">
+            <img class="therashelf-screens" src="images/therashelf.png" alt="therashelf">
+            <h4>THERASHELF</h4>
+            <p>Workspace solution for remote therapy</p>
+          </div></a>
+      </section>
+    </div> <!--closes project container-->
 
 <!--Footer -->
     <footer class="footer">
@@ -84,7 +70,6 @@
         </li>
       </ul>
     </footer>
-   </div>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YEW87N3Z7"></script>
@@ -96,13 +81,4 @@
       gtag('config', 'G-9YEW87N3Z7');
     </script>
   </body>
-  <!--javascript for functional hamburger menu-->
-    <script>
-      const toggleButton = document.getElementsByClassName('toggle-button')[0]
-      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-     toggleButton.addEventListener('click', () => {
-     navbarLinks.classList.toggle('active')
-   })
-  </script>
 </html>
