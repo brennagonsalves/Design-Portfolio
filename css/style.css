@@ -75,7 +75,7 @@ h6 {
 }
 
 figcaption{
-  color: #303240;
+  color: #8E8E90;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   margin-top: 3rem;
@@ -114,7 +114,7 @@ ol {
 }
 
 p {
-  color: #3D3D3D;
+  color: #0A1417;
   font-family: 'Inter', sans-serif;
   font-size: 1.8rem;
   line-height: 2.9rem;
@@ -133,33 +133,17 @@ ol li {
   padding-top: 2rem;
 }
 
-nav .logo{
-  color: #FEFEFE;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin-top: 2rem;
+
+.catalyst-background{
+  background-repeat: no-repeat;
+  background-image: url('../images/background.png');
+  min-height: 100%;
+
 }
 
-/*static background mobile*/
-.background-catalyst{
-  background-color: #C7E8DC;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url('../images/catalyst-preview.png');
-  background-size: 200px 350px;
-  background-position: center;
-  height: 100%;
-}
-
-.background-therashelf{
-  background-color: #DCE7F2;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: url('../images/therashelf.png');
-  background-size: 200px 350px;
-  background-position: center;
-  height: 100%;
+.catalyst-background img{
+  max-width: 60%;
+  padding-top: 4rem;
 }
 
 /*font color changes*/
@@ -169,16 +153,6 @@ nav .logo{
   color: #FEFEFE;
 }
 
-.therashelf-navbar{
-  position: fixed;
-  padding-left: 3rem;
-  padding-top: 5rem;
-}
-
-.therashelf-navbar i{
-  font-size: 3rem;
-}
-
 .footer li {
   padding: 4.5rem .5rem 0 0;
 }
@@ -186,16 +160,13 @@ nav .logo{
 /*background color changes*/
 .insights, .homepage, .concluding-thoughts,
 .concluding-thoughts-therashelf,
-.therashelf-insights, .about-me, footer{
+.therashelf-insights, .about-me,
+.wireframe-group, footer{
   background-color: #1D1E21;
 }
 
-.wireframe-group, .solution-two-changes {
-  background-color: #F2F2F2;
-}
-
 .therashelf-final{
-  background-color: #DCE7F2;
+  background-color: #1D1E21;
   padding-bottom: 9rem;
   margin-top: 4rem;
 }
@@ -245,6 +216,7 @@ nav .logo{
 
 /*grids for mobile catalyst*/
 .insights{
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -289,8 +261,7 @@ nav .logo{
   grid-template-columns: 1fr;
   grid-template-areas:
   "solution-text"
-  "video-one"
-  "changes-one";
+  "video-one";
 }
 
 .solution-text{
@@ -301,10 +272,6 @@ nav .logo{
   grid-area: video-one;
 }
 
-.solution-one-changes{
-  grid-area: changes-one;
-}
-
 .solution-two{
   background-color: #F2F2F2;
   margin-top: 4rem;
@@ -313,8 +280,7 @@ nav .logo{
   grid-template-columns: 1fr;
   grid-template-areas:
   "solution-text-two"
-  "video-two"
-  "changes-two";
+  "video-two";
 }
 
 .solution-text-two{
@@ -325,18 +291,13 @@ nav .logo{
   grid-area: video-two;
 }
 
-.solution-two-changes{
-  grid-area: changes-two;
-}
-
 .solution-three{
   display: grid;
   margin-top: 4rem;
   grid-template-columns: 1fr;
   grid-template-areas:
   "solution-text-three"
-  "video-three"
-  "changes-three";
+  "video-three";
 }
 
 .solution-text-three{
@@ -345,10 +306,6 @@ nav .logo{
 
 .solution-threevid{
   grid-area: video-three;
-}
-
-.solution-three-changes{
-  grid-area: changes-three;
 }
 
 .copyright {
@@ -430,27 +387,31 @@ nav .logo{
   padding-top: 5rem;
   margin-top: 5rem;
 }
-.concluding-thoughts h4{
-  margin-top: 0;
-}
 
 .concluding-thoughts-therashelf{
   padding-top: 5rem;
   margin-top: 0;
 }
 
-/*image resizing for tablet*/
-.catalyst-sneakpeak, .wireframe-set-four{
+.catalyst-sneakpeak{
   max-width: 90%;
 }
 
-.wireframe-set-three, .therashelf-solution {
+.therashelf-solution {
   max-width: 60%;
 }
 
 .wireframe-group{
   margin-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.wireframe-group img{
+  max-width: 90%;
+}
+
+.wireframes img{
+  max-width: 70%;
 }
 
 /*footer icon styling*/
@@ -475,74 +436,187 @@ nav .logo{
 
 .footer li {
   display: inline-block;
+ }
+
+/*responsive nav*/
+nav {
+  top: 0;
+  max-width: 100%;
+  margin-top: 3rem;
+  margin-left: 3rem;
 }
 
-/*responsive navbar begins*/
-.navbar {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10rem;
-}
-
-.navbar-catalyst{
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-links {
-  height: 100%;
-}
-
-.navbar-links ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  list-style: none;
-}
-
-.navbar-links li a {
-  color: #8E8E90;
-  display: block;
+.logo{
+  color: white;
   font-family: 'Inter', sans-serif;
   font-size: 1.7rem;
-  padding-left: 3rem;
-  padding-top: 3rem;
+  font-weight: 600;
+}
+
+.logo-casestudy{
+  color: #1D1E21;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.menu {   /*links on right sides*/
+  position: relative;
+  float: right;
+  list-style-type: none;
+  transition: top 0.5s;
+}
+
+.menu-casestudy {   /*links on right sides*/
+  position: relative;
+  float: right;
+  list-style-type: none;
+  transition: top 0.5s;
+}
+
+.menu li {
+  display: inline;
+  cursor: pointer;
+}
+
+.menu-casestudy li {
+  display: inline;
+  cursor: pointer;
+}
+
+.menu li a {
+  color: #8E8E90;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
   text-decoration: none;
 }
 
-.navbar-links li a:hover {
+.menu-casestudy li a {
+  color: #8E8E90;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.menu li a:hover{
   color: #FEFEFE;
 }
 
-.toggle-button {
-  display: none;
-  flex-direction: column;
-  height: 2rem;
-  justify-content: space-between;
-  position: absolute;
-  right: 3rem;
-  top: 4.4rem;
-  width: 3rem;
+.menu-casestudy li a:hover{
+  color: #1D1E21;
 }
 
-/*hamburger menu*/
-.bar {
-  background-color: #3B3B3B;
-  border-radius: 2rem;
-  height: .4rem;
-  width: 100%;
+.menu li::before {
+  position: absolute;
+  bottom: -6px;
+  content: "";
+  height: 3px;
+  width: 0;
+  transition: 0.5s;
+}
+
+.menu-casestudy li::before {
+  position: absolute;
+  bottom: -6px;
+  content: "";
+  height: 3px;
+  width: 0;
+  transition: 0.5s;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+nav label { /*hamburger menu*/
+  position: absolute;
+  display: none;
+  margin-top: 2.5rem;
+  margin-right: 3rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav > label > span { /*hamburger menu bars*/
+  display: block;
+  margin-bottom: .4rem;
+  height: 4px;
+  width: 22px;
+  border-radius: 1px;
+  background: #8E8E90;
+  transition: 0.3s;
+}
+
+input[type=checkbox]:checked ~ .menu {
+  top: 0;
+}
+
+input[type=checkbox]:checked ~ .menu-casestudy {
+  top: 0;
+}
+
+input[type=checkbox]:checked ~ label span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ label span:nth-child(2) {
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ label span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 10rem;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: white;
+  }
+
+  .menu li {
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+  }
+
+  .menu-casestudy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 10rem;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: white;
+  }
+
+  .menu-casestudy li {
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+  }
+
+  nav label { /*hamburger menu*/
+    display: block;
+  }
 }
 
 /*media queries begin for tablet*/
 @media (min-width:768px) {
-
   h1{
     font-size: 5rem;
     margin-left: 10rem;
@@ -566,15 +640,14 @@ nav .logo{
     margin: 4rem 0 0 10rem;
   }
 
+  figcaption{
+    font-size: 1.9rem;
+  }
+
   p{
     font-size: 2rem;
     line-height: 3.1rem;
     margin: 3rem 10rem 0 10rem;
-  }
-
-  span{
-    font-size: 2rem;
-    margin-left: 10rem;
   }
 
   ol{
@@ -589,39 +662,74 @@ nav .logo{
     padding-top: 9rem;
   }
 
+  nav{
+    margin-left: 8rem;
+    margin-top: 4rem;
+  }
+
+  .menu {
+    margin-right: 8rem;
+  }
+
+  .menu li {
+    padding-left: 2rem;
+  }
+
+  .menu-casestudy {
+    margin-right: 8rem;
+  }
+
+  .menu-casestudy li {
+    padding-left: 2rem;
+  }
+
+  .catalyst-background{
+    background-repeat: no-repeat;
+    background-image: url('../images/background.png');
+    margin-top: 2rem;
+  }
+
+  .catalyst-background img{
+    max-width: 22%;
+    padding-top: 3.4rem;
+  }
+
+  .sketches{
+    background-repeat: no-repeat;
+    background-image: url('../images/sketches-catalyst.jpg');
+    margin-top: 9rem;
+    opacity: .9;
+    padding: 18rem 0;
+  }
+
+  .sketches-therashelf{
+    background-repeat: no-repeat;
+    background-image: url('../images/sketches.jpg');
+    margin-top: 9rem;
+    opacity: .9;
+    padding: 18rem 0;
+  }
+
+  .sketches-content{
+    background-color: hsla(0, 0%, 100%, 0.92);
+    padding: 8rem 0;
+    margin: 0 10rem;
+  }
+
+  .sketches h4, .sketches-therashelf h4{
+    margin: 0 0 0 14rem;
+  }
+
+  .sketches p, .sketches-therashelf p{
+   margin: 3rem 12rem 0 14rem;
+  }
+
   .introduction h4{
     font-size: 2.8rem;
     line-height: 3.8rem;
     margin: 12rem 18rem;
   }
 
-/*static background tablet*/
-  .background-catalyst{
-    background-color: #C7E8DC;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url('../images/catalyst-preview.png');
-    background-size: 300px 550px;
-    background-position: center;
-    height: 100%;
-    padding-top: 50rem;
-  }
-
-  .background-therashelf{
-    background-color: #DCE7F2;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: url('../images/therashelf.png');
-    background-size: 300px 500px;
-    background-position: center;
-    height: 100%;
-    padding-top: 50rem;
-  }
-
-  .therashelf-navbar{
-    padding-left: 10rem;
-    padding-top: 5rem;
-  }
 
 /*define grid areas*/
 .container-projects{
@@ -756,8 +864,7 @@ nav .logo{
     margin-top: 9rem;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
-    "solution-text video-one"
-    "changes-one changes-one";
+    "solution-text video-one";
   }
 
   .solution-text{
@@ -774,10 +881,6 @@ nav .logo{
     margin: 0 4rem 0 0;
   }
 
-  .solution-one-changes{
-    grid-area: changes-one;
-  }
-
   .solution-two{
     background-color: #F2F2F2;
     margin-top: 9rem;
@@ -785,8 +888,7 @@ nav .logo{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
-    "solution-text-two video-two"
-    "changes-two changes-two";
+    "solution-text-two video-two";
   }
 
   .solution-text-two{
@@ -799,17 +901,12 @@ nav .logo{
     margin: 8rem 4rem 0 0;
   }
 
-  .solution-two-changes{
-    grid-area: changes-two;
-  }
-
   .solution-three{
     display: grid;
     margin-top: 9rem;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
-    "solution-text-three video-three"
-    "changes-three changes-three";
+    "solution-text-three video-three";
   }
 
   .solution-text-three{
@@ -819,10 +916,6 @@ nav .logo{
   .solution-threevid{
     grid-area: video-three;
     margin-right: 4rem;
-  }
-
-  .solution-three-changes{
-    grid-area: changes-three;
   }
 
   /*resizing tablet*/
@@ -856,11 +949,11 @@ nav .logo{
 
   .insights p {
     font-size: 1.8rem;
-    margin: 3rem 0 0 0;
+    margin: 3rem 0 8rem 0;
   }
 
   .insights h4{
-    margin: 0 0 0 10rem;
+    margin: 8rem 0 0 10rem;
     padding-bottom: 7rem;
   }
 
@@ -870,12 +963,12 @@ nav .logo{
   }
 
   /*image resizing for tablet*/
-  .catalyst-sneakpeak, .wireframe-set-four {
+  .catalyst-sneakpeak {
     max-width: 80%;
   }
 
-  .wireframe-set-three, .revisions,
-  .personas-img, .flow-image {
+   .revisions, .personas-img,
+   .flow-image {
     max-width: 60%;
   }
 
@@ -1005,7 +1098,7 @@ nav .logo{
   }
 
   .insights p {
-    margin: 3rem 0 0 0;
+    margin: 3rem 0 8rem 0;
   }
 
   .insights h4 {
@@ -1015,5 +1108,10 @@ nav .logo{
   .solution-onevid, .solution-twovid,
   .solution-threevid{
     margin-right: 50rem;
+  }
+
+  .concluding-thoughts{
+    padding-top: 9rem;
+    margin-top: 8rem;
   }
 }
