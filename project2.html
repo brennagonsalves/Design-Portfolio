@@ -11,13 +11,26 @@
 </head>
   <body>
 
-    <nav class="therashelf-navbar">
-      <a href="index.html">
-      <i class="fas fa-arrow-circle-left"></i></a>
+  <!--responsive navbar-->
+    <nav>
+      <a href="index.html" class="logo-casestudy">BRENNA GONSALVES</a>
+        <input type="checkbox" id="nav">
+        <label for="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu-casestudy">
+          <li><a href="index.html#work">WORK</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="images/brennagonsalves-resume.pdf" target="_blank">RESUME</a></li>
+        </ul>
     </nav>
 
   <!--catalyst image-->
-    <section class="background-catalyst"></section>
+    <section class="catalyst-background">
+      <img src="images/catalyst-preview.png" alt="catalyst preview">
+    </section>
 
   <!--introduction-->
     <section class="intro">
@@ -49,8 +62,6 @@
 
   <img class="catalyst-sneakpeak" src="images/catalyst-solution.png" alt="catalyst sneakpeak">
 
-
-
     <!--surveys-->
       <section class="surveys">
         <h4>SURVEYS</h4>
@@ -67,9 +78,6 @@
         <p>Duolingo and Lumosity are the most comparable to the concept of Catalyst. They both have strong branding and fun UI elements that are interesting to users. Both incorporate course tracking and variable reward systems to keep users motivated. YouTube provides smart recommendations to users based on interactions with the product.</p>
         <h5>Weaknesses</h5>
         <p>Competitors only offer vague course descriptions and lack metrics (like reviews) that are relevant to users when browsing for content. After enrolling, users can only progress linearly and there are no options to personalize content based on individual interests. </p>
-        <div class="button">
-          <a href="images/competitive-analysis-catalyst.pdf" target="_blank" class="button-styling-catalyst">View Full Analysis</a>
-        </div>
       </section>
 
       <!--take aways-->
@@ -101,12 +109,10 @@
 
   <!--Sketches-->
       <section class="sketches">
-        <h4>SKETCHES</h4>
-        <p>I made rapid iteration sketches to explore different configurations for my product pages. I was able to mitigate potentional breakdowns in user flows. I also gained a clearer direction for the overall function and design of the product.</p>
-        <figure>
-          <img src="images/sketches-catalyst.jpg" alt="sketches">
-          <figcaption>Initial sketches</figcaption>
-        </figure>
+        <div class="sketches-content">
+          <h4>SKETCHES</h4>
+          <p>I made rapid iteration sketches to explore different configurations for my product pages. I was able to mitigate potentional breakdowns in user flows. I also gained a clearer direction for the overall function and design of the product.</p>
+        </div>
       </section>
 
   <!--Wireframes-->
@@ -114,20 +120,16 @@
         <h4>WIREFRAMES</h4>
         <p>I created digital wireframes in Figma using my sketches and user flows for reference. Wireframes were compiled to represent how users can accomplish the most important product tasks. The high priority features include browsing content, adding courses, and completing lesson content. Let's take a look at the first iterations.</p>
         <div class="wireframe-group">
-          <figure class="wireframe-set-three">
+          <figure>
             <img src="images/wireframes-one-catalyst.png" alt="wireframes">
             <figcaption>Iteration 1: Adding a Course</figcaption>
           </figure>
 
           <figure>
-            <img class="wireframe-set-four" src="images/wireframes-two-catalyst.png" alt="wireframes">
+            <img src="images/wireframes-two-catalyst.png" alt="wireframes">
             <figcaption>Iteration 1: Lesson Content</figcaption>
           </figure>
 
-          <figure class="wireframe-set-three">
-            <img src="images/wireframes-three-catalyst.png" alt="wireframes">
-            <figcaption>Iteration 1: Knowledge Checks</figcaption>
-          </figure>
         </div>
       </section>
 
@@ -137,52 +139,40 @@
       <section class="solution-one">
         <div class="solution-text">
           <h4>Browse & Add Courses</h4>
-          <p> Users are free to browse a content feed with tailored recommendations based on interests and preferences. Comprehensive course previews provides all the information a users needs to feel confident enrolling in a course. From there, users may continue to browse content or access the new and in progress courses from the toolbar.</p>
+          <p> I reconfigured the content feed on the homepage to include category filters. I used larger cards to emphasis recommended content. This organization is more logical than the original grid display. It will make content browsing less cumbersome while saving the user time and effort.</p>
         </div>
         <video class="solution-onevid" width="300" height="550" controls autoplay loop muted>
           <source src="images/catalyst-solution-one.mov" type="video/mp4">
             <p>Your browser doesn't support HTML5 video.</p>
         </video>
-        <div class="solution-one-changes">
-          <h5>Key Design Changes</h5>
-          <p>I reconfigured the content feed on the homepage to include category filters. I used larger cards to emphasis recommended content. This organization is more logical than the original grid display. It will make content browsing less cumbersome while saving the user time and effort.</p>
-        </div>
       </section>
 
       <section class="solution-two">
         <div class="solution-text-two">
           <h4>Accessing Lesson Content</h4>
-          <p>New and in progress courses are easily accessed from the toolbar. Each course page comes equipped with a full breakdown of learning modules. You'll also notice simple but effective progress features in both the master list and individual course overviews to help users stay on track. </p>
+          <p>The second iteration of the lesson overview page now mirrors the configuration of the course overview for better consistency. The use of accordian tabs eliminates the need for the user to navigate to a different page to see the content included in a particular lesson. It also allows space for collaboration features like forums.</p>
         </div>
         <video class="solution-twovid" width="300" height="550" controls autoplay loop muted>
           <source src="images/catalyst-solution-two.mov" type="video/mp4">
             <p>Your browser doesn't support HTML5 video.</p>
         </video>
-        <div class="solution-two-changes">
-          <h5>Key Design Changes</h5>
-          <p>The second iteration of the lesson overview page now mirrors the configuration of the course overview for better consistency. The use of accordian tabs eliminates the need for the user to navigate to a different page to see the content included in a particular lesson. It also allows space for collaboration features like forums.</p>
-        </div>
       </section>
 
       <section class="solution-three">
         <div class="solution-text-three">
           <h4>Knowledge Check</h4>
-          <p>Users navigate to either quizzes or interactive games at the completion of each lesson to make sure they understand the major concepts. The illustrations are designed to be fun and bright to keep users engaged in their learning. After submitting an answer, the user receives specific feedback about each question to reinforce key learning concepts.</p>
+          <p>Users navigate to either quizzes or interactive games at the completion of each lesson. I improved navigation feedback during quizzes by using inactive state buttons until users select an answer. Subsequently, the background of the selected response changes colors for click feedback.</p>
         </div>
         <video class="solution-threevid" width="300" height="550" controls autoplay loop muted>
           <source src="images/catalyst-solution-three.mov" type="video/mp4">
             <p>Your browser doesn't support HTML5 video.</p>
         </video>
-        <div class="solution-three-changes">
-          <h5>Key Design Changes</h5>
-          <p>I noticed there was no feedback when selecting quiz answers during knowledge checks. This is a major pain point for users and could pose a threat to retention long term. In the second iteration, the submission button remains in an inactive state until users select an answer. The background color of the selected response changes to a light green. This is a simple and effective method to improve navigation feedback without distracting from the content itself.</p>
-        </div>
       </section>
 
     <!--concluding thoughts-->
       <section class="concluding-thoughts">
         <h4>CONCLUDING THOUGHTS</h4>
-        <p>I kept the scope of the Catalyst prototype relatively narrow for purposes of this case study. There's room to include additional screens (like the updated dashboard with category filters applied) to improve the overall functionality of the product. Applying animations throughout the product would elevate Catalyst to the next level as well.</p>
+        <p>I kept the scope of the Catalyst prototype relatively narrow for purposes of this case study. Next up, I would complete usability and preference testing to get more feedback from users. There's also room to include additional screens (like the updated dashboard with category filters applied) to improve the overall functionality of the product. </p>
         <p>Thanks for stopping by! Feel free to check out the clickable prototype. </p>
         <div class="button">
           <a href="https://www.figma.com/proto/6VjWgvKCfSUNO4Jlj6D5MP/Clickable-Prototype-final?node-id=467%3A957&scaling=scale-down" target="_blank" class="button-styling-catalyst">Clickable Prototype</a>
