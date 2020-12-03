@@ -133,12 +133,10 @@ ol li {
   padding-top: 2rem;
 }
 
-
 .catalyst-background{
   background-repeat: no-repeat;
   background-image: url('../images/background.png');
   min-height: 100%;
-
 }
 
 .catalyst-background img{
@@ -165,6 +163,10 @@ ol li {
   background-color: #1D1E21;
 }
 
+.personas{
+    background-color: #F2F2F2;
+}
+
 .therashelf-final{
   background-color: #1D1E21;
   padding-bottom: 9rem;
@@ -172,6 +174,24 @@ ol li {
 }
 
 /*define grid areas*/
+.persona-grid{
+  display: grid;
+  margin: 2rem;
+  grid-template: 1fr;
+  grid-template-areas:
+  "persona-one"
+  "persona-two";
+}
+
+.persona-one{
+  grid-area: persona-one;
+}
+
+.persona-two{
+  grid-area: persona-two;
+  padding-bottom: 5rem;
+}
+
 .container-projects{
   display: grid;
   margin: 2rem;
@@ -379,8 +399,13 @@ ol li {
   margin-top: 4rem;
 }
 
-.concluding-thoughts h4{
+.concluding-thoughts h4, .personas h4 {
   margin-top: 0;
+}
+
+.personas{
+  margin-top: 0;
+  padding-top: 9rem;
 }
 
 .concluding-thoughts{
@@ -732,6 +757,20 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
 
 /*define grid areas*/
+.persona-grid{
+  display: grid;
+  margin: 0 8rem;
+  grid-column-gap: 2rem;
+  grid-template: 1fr 1fr;
+  grid-template-areas:
+  "persona-one persona-two";
+}
+
+.persona-one{
+  padding-bottom: 9rem;
+}
+
+
 .container-projects{
   display: grid;
   margin: 0 10rem;
@@ -1103,6 +1142,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   .insights h4 {
     margin-left: 25rem;
+  }
+
+  .persona-grid{
+    margin: 0 15rem;
+    grid-column-gap: 0;
   }
 
   .solution-onevid, .solution-twovid,
