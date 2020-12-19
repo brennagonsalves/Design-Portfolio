@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c62ae369ea.js" crossorigin="anonymous"></script>
   <title> Portfolio | Brenna Gonsalves</title>
@@ -28,7 +29,7 @@
     </nav>
 
   <!--hero-->
-    <section class="introduction">
+    <section class="introduction" data-aos="fade-up">
       <h1>Former Speech Therapist with expertise in human cognition and processing. I design with inclusivity and thoughtfulness.</h1>
     </section>
 
@@ -84,6 +85,12 @@
       gtag('js', new Date());
 
       gtag('config', 'G-9YEW87N3Z7');
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 1300,
+    })
     </script>
   </body>
 </html>
