@@ -726,9 +726,9 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .container:hover, .container-two:hover{
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
   transition: .7s ease;
 }
 
@@ -769,7 +769,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   .catalyst-background img{
    max-width: 50%;
-   padding-top: 10rem;
+   padding-top: 8rem;
  }
 
   .sketches{
@@ -1041,15 +1041,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   /*resizing tablet*/
-  .solution {
-    padding: 0 0 8rem 0;
-    margin-top: 9rem;
-  }
-
-  .solution h1 {
-    padding-top: 3rem;
-  }
-
   .insights{
     padding: 8rem 0 8rem 0;
     margin-top: 9rem;
