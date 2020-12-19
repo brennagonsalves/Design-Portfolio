@@ -94,7 +94,7 @@ footer {
 }
 
 footer p {
-  color: #FEFEFE;
+  color: #8E8E90;
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0;
@@ -104,6 +104,7 @@ footer p {
   display: inline-block;
   margin: 0;
   padding: 1rem 0 0 0;
+  transition: .7s ease;
 }
 
 img, figure, video {
@@ -142,7 +143,8 @@ ol li {
 
 /*project styling homepage mobile*/
 .introduction{
-  margin: 8rem 2rem;
+  background-color: #1D1E21;
+  padding: 8rem 2rem;
 }
 
 .introduction h1{
@@ -164,22 +166,19 @@ ol li {
 
 .project-background {
   background-color: #F5F5F7;
-  border-radius: 2rem;
 }
 
 .project-title h5{
-  color: white;
-  margin:1.2rem 0 0 0;
+  color: #0A1417;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
 }
 
 .project-title p{
+  font-size: 1.7rem;
   font-weight: 300;
-  color: white;
+  color: #0A1417;
   margin: 0;
-}
-
-.catalyst-img, .therashelf-img{
-  padding: 3.3rem 0;
 }
 
 .catalyst-background{
@@ -193,17 +192,9 @@ ol li {
   padding-bottom: 2rem;
 }
 
-/*font color changes*/
-.concluding-thoughts h4,
-.concluding-thoughts p,
-.concluding-thoughts-therashelf p{
-  color: #FEFEFE;
-}
-
 /*background color changes*/
-.insights, .homepage, .concluding-thoughts,
-.concluding-thoughts-therashelf,
-.therashelf-insights, .about-me, footer{
+.insights, .homepage, .therashelf-insights,
+.about-me{
   background-color: #1D1E21;
 }
 
@@ -410,23 +401,9 @@ ol li {
   border: .1rem solid #5A71C9;
 }
 
-.concluding-thoughts h4, .personas h4 {
-  margin-top: 0;
-}
-
 .personas{
   margin-top: 0;
   padding-top: 9rem;
-}
-
-.concluding-thoughts{
-  padding-top: 5rem;
-  margin-top: 5rem;
-}
-
-.concluding-thoughts-therashelf{
-  padding-top: 5rem;
-  margin-top: 0;
 }
 
 .catalyst-sneakpeak{
@@ -448,12 +425,8 @@ ol li {
 
 /*footer icon styling*/
 .fa-linkedin-in, .fa-github,
-.fa-envelope {
+.fa-envelope, .fa-chevron-down {
   color: #8E8E90;
-}
-
-.fa-arrow-circle-left{
-  color: #303240;
 }
 
 .fa-linkedin-in:hover, .fa-github:hover,
@@ -472,9 +445,14 @@ footer li {
 
 /*responsive nav*/
 nav {
+  background-color: #1D1E21;
   top: 0;
   max-width: 100%;
-  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+.casestudy{
+  background-color: white;
 }
 
 .menu {   /*links on right sides*/
@@ -680,8 +658,8 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   nav{
-    margin-left: 8rem;
-    margin-top: 2.2rem;
+    padding-left: 8rem;
+    padding-top: 2.2rem;
   }
 
   footer{
@@ -725,7 +703,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     transition: .7s ease;
   }
 
-  .container:hover, .container-two:hover{
+  .container:hover, .container-two:hover, .logo img:hover{
   -webkit-transform: scale(1.04);
   -ms-transform: scale(1.04);
   transform: scale(1.04);
@@ -733,7 +711,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 }
 
 .introduction{
-  padding: 12rem;
+  padding: 15rem;
 }
 
 .introduction h1{
@@ -744,18 +722,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   padding: 0;
 }
 
-.project-title h5{
-  font-size: 2.2rem;
-  color: white;
-  margin:1.2rem 0 0 0;
-}
-
-.project-title p{
-  font-weight: 300;
-  color: white;
-  margin: 0;
-}
-
 .catalyst-background{
   background-repeat: no-repeat;
   background-image: url('../images/background.png');
@@ -763,7 +729,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 }
 
   .catalyst-img, .therashelf-img{
-    max-width: 65%;
+    max-width: 70%;
     padding: 3.3rem 0;
   }
 
@@ -1093,20 +1059,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     padding-bottom: 8rem;
   }
 
-  .concluding-thoughts h4{
-    margin-top: 0;
-  }
-
-  .concluding-thoughts{
-    padding-top: 5rem;
-    margin-top: 5rem;
-  }
-
-  .concluding-thoughts-therashelf{
-    padding-top: 5rem;
-    margin-top: 0;
-  }
-
   /*link icon size*/
   footer p{
     font-size: 1.7rem;
@@ -1156,11 +1108,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   /*project styling homepage desktop*/
   .introduction{
-    margin: 5rem 10rem;
+    padding: 17rem 22rem;
   }
 
   .container{
-    margin: 0 25rem 8rem 25rem;
+    margin: 10rem 25rem 8rem 25rem;
   }
 
   .container-two{
@@ -1240,10 +1192,5 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .solution-onevid, .solution-twovid,
   .solution-threevid{
     margin-right: 50rem;
-  }
-
-  .concluding-thoughts{
-    padding-top: 9rem;
-    margin-top: 8rem;
   }
 }
