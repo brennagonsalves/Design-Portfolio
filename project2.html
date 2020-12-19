@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c62ae369ea.js" crossorigin="anonymous"></script>
   <title> Catalyst Case Study | Brenna Gonsalves</title>
@@ -33,7 +34,7 @@
     </section>
 
   <!--introduction-->
-    <section class="intro">
+    <section class="intro" data-aos="fade-up">
       <div class="intro-content">
         <h1>Catalyst</h1>
         <p>Catalyst is a learning product that creates a space for those with an interest in the sciences. Its strategic array of features makes science learning simple, fun, and effective.</p>
@@ -60,10 +61,10 @@
     <p>Catalyst will provide intuitive solutions to user pain points. Here is a sneakpeak at the final iteration of the product.</p>
   </section>
 
-  <img class="catalyst-sneakpeak" src="images/catalyst-solution.png" alt="catalyst sneakpeak">
+  <img class="catalyst-sneakpeak" src="images/catalyst-solution.png" alt="catalyst sneakpeak" data-aos="fade-up">
 
     <!--surveys-->
-      <section class="surveys">
+      <section class="surveys" data-aos="fade-up">
         <h4>SURVEYS</h4>
         <p>I created a survey with questions about user's experiences, perceptions, and attitudes towards learning products. I also included questions geared specifically towards STEM topics. Some interesting findings include:</p>
         <img src="images/survey-stats-catalyst.png" alt="surveys">
@@ -81,7 +82,7 @@
       </section>
 
       <!--take aways-->
-      <section class="insights">
+      <section class="insights" data-aos="fade-up">
         <h4 class="insight-title">ACTIONABLE INSIGHTS</h4>
         <div class="insight-one">
           <h1>Engage</h1>
@@ -98,7 +99,7 @@
       </section>
 
   <!--personas-->
-      <section class="personas">
+      <section class="personas" data-aos="fade-up">
         <h4>CREATING PERSONAS</h4>
         <p>I created two different types of users personas for this product. Each will benefit from different combinations of features.</p>
         <div class="persona-grid">
@@ -108,7 +109,7 @@
       </section>
 
   <!--User Flows-->
-      <section class="user-flows">
+      <section class="user-flows" data-aos="fade-up">
         <h4>USER FLOWS</h4>
         <p>I created user flows to represent how a user would interact with Catalyst's most important features. Below, you will find the preliminary user flow to preview courses and access lesson content.</p>
         <figure>
@@ -118,7 +119,7 @@
       </section>
 
   <!--Sketches-->
-      <section class="sketches">
+      <section class="sketches" data-aos="fade">
         <div class="sketches-content">
           <h4>SKETCHES</h4>
           <p>I made rapid iteration sketches to explore different configurations for product pages. I was able to mitigate potentional breakdowns in user flows. I also gained a clearer direction for the overall function and design of the product.</p>
@@ -126,7 +127,7 @@
       </section>
 
   <!--Wireframes-->
-      <section class="wireframes">
+      <section class="wireframes" data-aos="fade-up">
         <h4>WIREFRAMES</h4>
         <p>I created digital wireframes in Figma using my sketches and user flows for reference. Wireframes were compiled to represent how users can accomplish the most important product tasks. Let's take a look at the first iterations.</p>
         <div class="wireframe-group">
@@ -144,8 +145,10 @@
       </section>
 
     <!--final design-->
-      <h4>HIGH FIDELITY PROTOTYPE</h4>
-      <p>I breathed life into my wireframes by applying the color palette, illustrations, and other visual elements. Improvements were made to the overall functionality of the product as well. Let's look at the evolution of Catalyst in the next iterations.</p>
+      <div data-aos="fade-up">
+        <h4>HIGH FIDELITY PROTOTYPE</h4>
+        <p>I breathed life into my wireframes by applying the color palette, illustrations, and other visual elements. Improvements were made to the overall functionality of the product as well. Let's look at the evolution of Catalyst in the next iterations.</p>
+      </div>
       <section class="solution-one">
         <div class="solution-text">
           <h4>Browse & Add Courses</h4>
@@ -180,7 +183,7 @@
       </section>
 
     <!--concluding thoughts-->
-      <section class="concluding-thoughts">
+      <section class="concluding-thoughts" data-aos="fade">
         <h4>CONCLUDING THOUGHTS</h4>
         <p>I kept the scope of the Catalyst prototype relatively narrow to stay within project time constraints. Next up, I would complete usability and preference testing to get more feedback from users.</p>
         <p>Thanks for stopping by! Feel free to check out the clickable prototype. </p>
@@ -216,6 +219,12 @@
     gtag('js', new Date());
 
     gtag('config', 'G-9YEW87N3Z7');
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+  duration: 1300,
+  })
   </script>
   </body>
 </html>
