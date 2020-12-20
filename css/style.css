@@ -66,31 +66,6 @@ figcaption{
   text-align: center;
 }
 
-/*grid area for footer*/
-footer {
-  align-items: center;
-  padding: 2rem 0 2rem 2rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas:
-  "copyright links";
-}
-
-.copyright {
-  grid-area: copyright;
-}
-
-.footer-icons {
-  grid-area: links;
-}
-
-footer p {
-  color: #8E8E90;
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin: 0;
-}
-
 .logo img{
   display: inline-block;
   margin: 0;
@@ -135,7 +110,7 @@ ol li {
 /*project styling homepage mobile*/
 .introduction{
   background-color: #1D1E21;
-  padding: 10rem 3rem 2rem 3rem;
+  padding: 12rem 3rem 2rem 3rem;
 }
 
 .introduction h1{
@@ -151,7 +126,7 @@ ol li {
 .introduction i{
   display: block;
   font-size: 2.8rem;
-  margin-top: 12rem;
+  margin-top: 14rem;
   text-align: center;
   width: 100%;
 }
@@ -221,8 +196,23 @@ ol li {
   background-color: #1D1E21;
 }
 
+.user-flows{
+  background-color: #F5F5F7;
+  padding-bottom: 6rem
+}
+
+.user-flows h4, .personas h4, .therashelf-insights h4{
+  margin-top: 0;
+  padding-top: 6rem;
+}
+
+.therashelf-insights{
+  margin-top: 3rem;
+  padding-bottom: 6rem;
+}
+
 .personas, .user-testing{
-    background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .therashelf-final{
@@ -235,7 +225,7 @@ ol li {
 .sketches{
   background-repeat: no-repeat;
   background-image: url('../images/sketches-catalyst.jpg');
-  margin: 7rem 0;
+  margin: 0;
   opacity: .9;
   padding: 15rem 0;
 }
@@ -243,7 +233,7 @@ ol li {
 .sketches-therashelf{
   background-repeat: no-repeat;
   background-image: url('../images/sketches-therashelf.jpg');
-  margin-top: 7rem 0;
+  margin: 0;
   opacity: .9;
   padding: 15rem 0;
 }
@@ -257,7 +247,7 @@ ol li {
 /*define grid areas*/
 .persona-grid{
   display: grid;
-  margin: 2rem;
+  margin: 0 2rem;
   grid-template: 1fr;
   grid-template-areas:
   "persona-one"
@@ -271,6 +261,55 @@ ol li {
 .persona-two{
   grid-area: persona-two;
   padding-bottom: 5rem;
+}
+
+/*testing grid therashelf tablet*/
+.testing-grid{
+  display: grid;
+  grid-row-gap: 3rem;
+  margin: 3rem;
+  padding: 3rem 0 6rem 0;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "quote-one impact-one"
+  "quote-two impact-two"
+  "quote-three impact-three";
+}
+
+.quote-one{
+  grid-area: quote-one;
+  padding: 0;
+  margin: 0;
+}
+
+.impact-one{
+  grid-area: impact-one;
+  padding: 0;
+  margin: 0;
+}
+
+.quote-two{
+  grid-area: quote-two;
+  padding: 0;
+  margin: 0;
+}
+
+.impact-two{
+  grid-area: impact-two;
+  padding: 0;
+  margin: 0;
+}
+
+.quote-three{
+  grid-area: quote-three;
+  padding: 0;
+  margin: 0;
+}
+
+.impact-three{
+  grid-area: impact-three;
+  padding: 0;
+  margin: 0;
 }
 
 /*grids for mobile catalyst*/
@@ -424,11 +463,6 @@ ol li {
   border: .1rem solid #5A71C9;
 }
 
-.personas{
-  margin-top: 0;
-  padding-top: 9rem;
-}
-
 .catalyst-sneakpeak{
   max-width: 90%;
 }
@@ -457,13 +491,34 @@ ol li {
   color: #FEFEFE;
 }
 
-/*link icon size*/
+/*footer styling mobile*/
+footer{
+  margin: 3rem;
+  position: relative;
+}
+
+.copyright{
+  float: left;
+}
+
+.footer-icons{
+  float: right;
+}
+
+footer p {
+  color: #8E8E90;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 0 3rem 0;
+}
+
 footer ul {
   font-size: 2rem;
 }
 
 footer li {
   display: inline-block;
+  padding-left: .5rem;
  }
 
 /*responsive nav*/
@@ -472,6 +527,7 @@ nav {
   top: 0;
   max-width: 100%;
   padding-left: 2rem;
+  padding-top: 2rem;
 }
 
 .casestudy{
@@ -551,7 +607,7 @@ input[type=checkbox] {
 nav label { /*hamburger menu*/
   position: absolute;
   display: none;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   margin-right: 3rem;
   top: 0;
   right: 0;
@@ -685,18 +741,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     padding-top: 2.2rem;
   }
 
-  footer{
-  padding: 5rem;
-  }
-
-  footer ul{
-    margin-left: 9rem;
-  }
-
-  footer li{
-    margin-left: 1.2rem;
-  }
-
   .menu {
     margin-right: 8rem;
     margin-top: 2.5rem;
@@ -768,7 +812,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .sketches{
     background-repeat: no-repeat;
     background-image: url('../images/sketches-catalyst.jpg');
-    margin-top: 9rem;
     opacity: .9;
     padding: 25rem 0;
   }
@@ -848,55 +891,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .responsibilities p{
     margin: 0;
     padding: 0;
-  }
-
-  /*testing grid therashelf tablet*/
-  .testing-grid{
-    display: grid;
-    grid-row-gap: 3rem;
-    margin: 0 0 0 10rem;
-    padding: 8rem 0;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "quote-one impact-one"
-    "quote-two impact-two"
-    "quote-three impact-three";
-  }
-
-  .quote-one{
-    grid-area: quote-one;
-    padding: 0;
-    margin: 0;
-  }
-
-  .impact-one{
-    grid-area: impact-one;
-    padding: 0;
-    margin: 0;
-  }
-
-  .quote-two{
-    grid-area: quote-two;
-    padding: 0;
-    margin: 0;
-  }
-
-  .impact-two{
-    grid-area: impact-two;
-    padding: 0;
-    margin: 0;
-  }
-
-  .quote-three{
-    grid-area: quote-three;
-    padding: 0;
-    margin: 0;
-  }
-
-  .impact-three{
-    grid-area: impact-three;
-    padding: 0;
-    margin: 0;
   }
 
   /*catalyst insights tablet*/
@@ -1086,7 +1080,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     padding-bottom: 8rem;
   }
 
-  /*link icon size*/
+  /*footer styling tablet*/
+  footer{
+    margin: 3rem 8rem;
+  }
+
   footer p{
     font-size: 1.7rem;
   }
@@ -1125,14 +1123,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     font-size: 2rem;
   }
 
-  footer{
-    padding-left: 15rem;
-  }
-
-  footer ul{
-    margin-left: 18rem;
-  }
-
   /*project styling homepage desktop*/
   .introduction{
     padding: 13rem 22rem 2rem 22rem;
@@ -1161,6 +1151,10 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .roles p {
     margin: 0;
     padding-left: 25rem;
+  }
+
+  .user-flows h4, .personas h4{
+    padding-top: 9rem;
   }
 
   .insights{
@@ -1223,5 +1217,10 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .solution-onevid, .solution-twovid,
   .solution-threevid{
     margin-right: 50rem;
+  }
+
+/*footer styling desktop*/
+  footer{
+    margin: 4rem 12rem;
   }
 }
