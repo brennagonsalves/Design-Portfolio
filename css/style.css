@@ -35,14 +35,6 @@ h2 {
   margin: 3rem 3rem 0 3rem;
 }
 
-h3 {
-  color: #3D4361;
-  font-family: 'Inter', sans-serif;
-  font-size: 2.8rem;
-  font-weight: 800;
-  line-height: 3.9rem;
-}
-
 h4 {
   color: #1D1E21;
   font-family: 'Inter', sans-serif;
@@ -73,7 +65,6 @@ figcaption{
   margin-top: 3rem;
   text-align: center;
 }
-
 
 /*grid area for footer*/
 footer {
@@ -144,24 +135,52 @@ ol li {
 /*project styling homepage mobile*/
 .introduction{
   background-color: #1D1E21;
-  padding: 8rem 2rem;
+  padding: 10rem 3rem 2rem 3rem;
 }
 
 .introduction h1{
   color: #FEFEFE;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  line-height: 3.4rem;
+  line-height: 3.8rem;
   margin: 0;
   padding: 0;
 }
 
+/*down chevron icon homepage*/
+.introduction i{
+  display: block;
+  font-size: 2.8rem;
+  margin-top: 12rem;
+  text-align: center;
+  width: 100%;
+}
+
+.fa-chevron-down:hover{
+  animation: bounce 1.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 25%, 55%, 75%, 100%{
+    transform: translateY(0);
+  }
+  45%{
+    transform: translateY(-12px);
+  }
+  65%{
+    transform: translateY(-10px);
+  }
+  85%{
+    transform: translateY(-3px);
+  }
+}
+
 .container{
-  margin: 2rem 2rem 5rem 2rem;
+  margin: 4rem 3rem 5rem 3rem;
 }
 
 .container-two{
-  margin: 2rem;
+  margin: 3rem;
 }
 
 .project-background {
@@ -175,10 +194,14 @@ ol li {
 }
 
 .project-title p{
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #0A1417;
   margin: 0;
+}
+
+.therashelf-img, .catalyst-img{
+  padding: 2rem 0;
 }
 
 .catalyst-background{
@@ -193,7 +216,7 @@ ol li {
 }
 
 /*background color changes*/
-.insights, .homepage, .therashelf-insights,
+.insights, .therashelf-insights,
 .about-me{
   background-color: #1D1E21;
 }
@@ -694,7 +717,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   /*project styling homepage tablet*/
   .container {
-    margin: 0 10rem 5rem 10rem;
+    margin: 8rem 10rem 5rem 10rem;
     transition: .7s ease;
   }
 
@@ -711,15 +734,19 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 }
 
 .introduction{
-  padding: 15rem;
+  padding: 12rem 10rem 2rem 10rem;
 }
 
 .introduction h1{
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 600;
   line-height: 5.7rem;
   margin: 0;
   padding: 0;
+}
+
+.introduction i{
+  margin-top: 10rem;
 }
 
 .catalyst-background{
@@ -1108,7 +1135,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   /*project styling homepage desktop*/
   .introduction{
-    padding: 17rem 22rem;
+    padding: 13rem 22rem 2rem 22rem;
+  }
+
+  .introduction i{
+    margin-top: 17rem;
   }
 
   .container{
