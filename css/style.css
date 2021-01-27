@@ -196,12 +196,22 @@ ol li {
   background-color: #1D1E21;
 }
 
-.user-flows{
-  background-color: #F5F5F7;
+.solution-forwardhealth{
+  background-color: #F5F6FA;
+}
+
+.forward-solution{
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 100%;
+}
+
+.user-flows {
+  margin: 0;
   padding-bottom: 6rem
 }
 
-.user-flows h4, .therashelf-insights h4, .user-testing h4, .personas h4{
+.user-flows h4, .therashelf-insights h4, .user-testing h4, .personas h4, .solution-forwardhealth h4{
   margin-top: 0;
   padding-top: 6rem;
 }
@@ -212,19 +222,13 @@ ol li {
 }
 
 .personas, .user-testing{
-  background-color: #F2F2F2;
-}
-
-.therashelf-final{
-  background-color: #1D1E21;
-  padding-bottom: 9rem;
-  margin-top: 4rem;
+  background-color: #FAFAFA;
 }
 
 /*sketches section background styling*/
 .sketches{
   background-repeat: no-repeat;
-  background-image: url('../images/sketches-catalyst.jpg');
+  background-image: url('../images/sketches-catalyst.jpg')
   margin: 0;
   opacity: .9;
   padding: 15rem 0;
@@ -371,7 +375,7 @@ ol li {
 }
 
 .solution-two{
-  background-color: #F2F2F2;
+  background-color: #F7F7F8;
   margin-top: 4rem;
   padding-bottom: 4rem;
   display: grid;
@@ -480,6 +484,11 @@ ol li {
   max-width: 80%;
 }
 
+.surveys .quotes{
+  margin-right: 0;
+  padding-right: 0;
+}
+
 /*footer icon styling*/
 .fa-linkedin-in, .fa-github,
 .fa-envelope, .fa-chevron-down {
@@ -490,6 +499,11 @@ ol li {
 .fa-envelope:hover {
   color: #FEFEFE;
 }
+
+.personas, .solution-forwardhealth{
+  margin-top: 9rem;
+}
+
 
 /*footer styling mobile*/
 footer{
@@ -838,7 +852,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
    margin: 3rem 12rem 0 14rem;
   }
 
-
 /*define grid areas*/
 .persona-grid{
   display: grid;
@@ -931,7 +944,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "revisions-one revisions-img"
-    "revisions-two revisions-img-two"
+    "revisions-img-two revisions-two"
     "revisions-three revisions-img-three";
   }
 
@@ -957,11 +970,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   .revisions-img-three{
     grid-area: revisions-img-three;
-  }
-
-  .rev-img{
-    max-width: 70%;
-    padding-top: 7rem;
   }
 
   /*grid for catalyst solutions tablet*/
@@ -990,7 +998,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   .solution-two{
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: #F7F7F8;
     margin-top: 9rem;
     padding-bottom: 8rem;
     display: grid;
@@ -1153,7 +1161,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     padding-left: 25rem;
   }
 
-  .user-flows h4, .user-testing h4, .personas h4{
+  .user-flows h4, .user-testing h4, .personas h4, .solution-forwardhealth h4{
     margin-top: 0;
     padding-top: 9rem;
   }
