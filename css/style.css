@@ -235,7 +235,6 @@ ol li {
   background-repeat: no-repeat;
   background-image: url('../images/sketches-catalyst.jpg')
   margin: 0;
-  opacity: .9;
   padding: 15rem 0;
 }
 
@@ -243,12 +242,11 @@ ol li {
   background-repeat: no-repeat;
   background-image: url('../images/sketches-therashelf.jpg');
   margin: 0;
-  opacity: .9;
   padding: 15rem 0;
 }
 
 .sketches-content{
-  background-color: hsla(0, 0%, 100%, 0.92);
+  background-color: hsla(0, 0%, 100%, 0.98);
   padding: 4rem 2rem;
   margin: 0 2.5rem;
 }
@@ -836,7 +834,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .sketches{
     background-repeat: no-repeat;
     background-image: url('../images/sketches-catalyst.jpg');
-    opacity: .9;
     padding: 25rem 0;
   }
 
@@ -844,12 +841,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     background-repeat: no-repeat;
     background-image: url('../images/sketches-therashelf.jpg');
     margin-top: 9rem;
-    opacity: .9;
     padding: 25rem 0;
   }
 
   .sketches-content{
-    background-color: hsla(0, 0%, 100%, 0.92);
+    background-color: hsla(0, 0%, 100%, 0.95);
     padding: 8rem 0;
     margin: 0 10rem;
   }
