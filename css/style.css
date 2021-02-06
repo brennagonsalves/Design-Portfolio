@@ -132,7 +132,7 @@ ol li {
 }
 
 .fa-chevron-down:hover{
-  animation: bounce 1.5s ease infinite;
+  animation: bounce 1.2s ease infinite;
 }
 
 @keyframes bounce {
@@ -230,7 +230,7 @@ ol li {
   background-color: #FAFAFA;
 }
 
-/*sketches section background styling*/
+/*sketches section background styling mobile*/
 .sketches{
   background-repeat: no-repeat;
   background-image: url('../images/sketches-catalyst.jpg')
@@ -238,6 +238,7 @@ ol li {
   padding: 15rem 0;
 }
 
+/*sketches background health mobile*/
 .sketches-therashelf{
   background-repeat: no-repeat;
   background-image: url('../images/sketches-therashelf.jpg');
@@ -831,6 +832,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
    padding-top: 8rem;
  }
 
+ /*sketches background large screen*/
   .sketches{
     background-repeat: no-repeat;
     background-image: url('../images/sketches-catalyst.jpg');
