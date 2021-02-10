@@ -191,7 +191,7 @@ ol li {
   background-color: #F5F6FA;
 }
 
-.solution-forwardhealth{
+.solution-forwardhealth {
   background-color: #FCFBFB;
 }
 
@@ -409,10 +409,6 @@ ol li {
   border: .1rem solid #5A71C9;
 }
 
-.catalyst-sneakpeak{
-  max-width: 90%;
-}
-
 .therashelf-solution {
   max-width: 60%;
 }
@@ -426,7 +422,7 @@ ol li {
   max-width: 80%;
 }
 
-.interface{
+.interface, .catalyst-sneakpeak{
   margin-right: 0;
   padding-right: 0;
 }
@@ -983,10 +979,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   /*image resizing for tablet*/
-  .catalyst-sneakpeak {
-    max-width: 80%;
-  }
-
    .personas-img {
     max-width: 60%;
   }
