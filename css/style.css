@@ -187,8 +187,12 @@ ol li {
   background-color: #1D1E21;
 }
 
-.solution-forwardhealth, .user-interface{
+.user-interface{
   background-color: #F5F6FA;
+}
+
+.solution-forwardhealth{
+  background-color: #FCFBFB;
 }
 
 .user-flows {
