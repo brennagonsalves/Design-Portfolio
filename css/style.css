@@ -422,7 +422,7 @@ ol li {
   max-width: 80%;
 }
 
-.interface, .catalyst-sneakpeak{
+.interface{
   margin-right: 0;
   padding-right: 0;
 }
