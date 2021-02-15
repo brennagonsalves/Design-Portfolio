@@ -215,6 +215,10 @@ ol li {
   background-color: #FAFAFA;
 }
 
+.interface{
+  max-width: 98%;
+}
+
 /*define grid areas*/
 .persona-grid{
   display: grid;
