@@ -83,6 +83,7 @@ p {
   color: #0A1417;
   font-family: 'Inter', sans-serif;
   font-size: 1.8rem;
+  font-weight: 300;
   line-height: 2.9rem;
   margin: 2rem 3rem 0 3rem;
 }
@@ -183,7 +184,7 @@ ol li {
 
 /*background color changes*/
 .insights, .therashelf-insights,
-.about-me, .introduction, footer{
+.introduction, footer{
   background-color: #1D1E21;
 }
 
@@ -204,6 +205,15 @@ ol li {
 .solution-forwardhealth h4, .user-interface h4{
   margin-top: 0;
   padding-top: 6rem;
+}
+
+.about a{
+  color: #0A1417;
+  text-decoration: underline;
+}
+
+.about a:hover{
+  color: #8E8E90;
 }
 
 .therashelf-insights{
@@ -279,11 +289,11 @@ ol li {
   color: #8E8E90;
 }
 
-.insights p, .therashelf-insights p, .about-me p {
+.insights p, .therashelf-insights p {
   color: #FEFEFE;
 }
 
-.insights h4, .therashelf-insights h4, .about-me h4 {
+.insights h4, .therashelf-insights h4 {
   color: #FEFEFE;
 }
 
