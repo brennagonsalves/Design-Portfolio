@@ -80,7 +80,7 @@ ol {
 }
 
 p {
-  color: #0A1417;
+  color: #272F31;
   font-family: 'Inter', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
@@ -155,7 +155,7 @@ ol li {
 }
 
 .project-title h5{
-  color: #0A1417;
+  color: #272F31;
   font-weight: 400;
   margin: 1rem 0 0 0;
 }
@@ -163,7 +163,7 @@ ol li {
 .project-title p{
   font-size: 1.6rem;
   font-weight: 300;
-  color: #0A1417;
+  color: #272F31;
   margin: 0;
 }
 
@@ -208,7 +208,7 @@ ol li {
 }
 
 .about a{
-  color: #0A1417;
+  color: #272F31;
   text-decoration: underline;
 }
 
