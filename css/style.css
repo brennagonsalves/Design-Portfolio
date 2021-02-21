@@ -292,6 +292,10 @@ ol li {
   color: #FEFEFE;
 }
 
+.testing-img{
+  max-width: 88%;
+}
+
 
 /*sketches background health mobile*/
 .sketches-forwardhealth{
@@ -449,7 +453,7 @@ ol li {
   margin-top: 9rem;
 }
 
-.solution-forwardhealth, .strategy{
+.solution-forwardhealth, .strategy, .user-testing{
   padding-bottom: 9rem;
 }
 
