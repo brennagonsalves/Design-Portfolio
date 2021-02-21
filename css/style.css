@@ -183,12 +183,11 @@ ol li {
 }
 
 /*background color changes*/
-.insights, .therashelf-insights,
-.introduction, footer{
+.insights, .introduction, footer{
   background-color: #1D1E21;
 }
 
-.user-interface{
+.user-interface, .strategy{
   background-color: #F5F6FA;
 }
 
@@ -201,8 +200,9 @@ ol li {
   padding-bottom: 6rem
 }
 
-.user-flows h4, .therashelf-insights h4, .user-testing h4, .personas h4,
-.solution-forwardhealth h4, .user-interface h4{
+.user-flows h4, .user-testing h4,
+.personas h4, .solution-forwardhealth h4,
+.user-interface h4, .strategy h4{
   margin-top: 0;
   padding-top: 6rem;
 }
@@ -214,11 +214,6 @@ ol li {
 
 .about a:hover{
   color: #8E8E90;
-}
-
-.therashelf-insights{
-  margin-top: 3rem;
-  padding-bottom: 6rem;
 }
 
 .personas, .user-testing{
@@ -235,6 +230,10 @@ ol li {
 
 .forward-vid{
   display: none;
+}
+
+.strategy-img{
+  margin-right: .8rem;
 }
 
 /*define grid areas*/
@@ -285,17 +284,14 @@ ol li {
   padding-bottom: 4rem;
 }
 
-.insights h1, .therashelf-insights h1, .inservice {
+.insights h1{
   color: #8E8E90;
 }
 
-.insights p, .therashelf-insights p {
+.insights p, .insights h4{
   color: #FEFEFE;
 }
 
-.insights h4, .therashelf-insights h4 {
-  color: #FEFEFE;
-}
 
 /*sketches background health mobile*/
 .sketches-forwardhealth{
@@ -449,11 +445,11 @@ ol li {
   padding-right: 0;
 }
 
-.personas, .solution-forwardhealth{
+.solution-forwardhealth, .strategy{
   margin-top: 9rem;
 }
 
-.solution-forwardhealth{
+.solution-forwardhealth, .strategy{
   padding-bottom: 9rem;
 }
 
@@ -782,6 +778,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     background-color: hsla(0, 0%, 100%, 0.95);
   }
 
+  .strategy-img{
+    margin-left: 18rem;
+    padding-top: 5rem;
+  }
+
 /*define grid areas*/
 .persona-grid{
   display: grid;
@@ -985,14 +986,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     padding: 0;
   }
 
-  .therashelf-insights h1{
-    padding-top: 5rem;
-  }
-
-  .therashelf-insights{
-    padding-bottom: 9rem;
-  }
-
   .insights p {
     font-size: 1.8rem;
     margin: 3rem 0 8rem 0;
@@ -1001,11 +994,6 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .insights h4{
     margin: 8rem 0 0 10rem;
     padding-bottom: 7rem;
-  }
-
-  .therashelf-insights h4{
-    padding-top: 8rem;
-    margin-top: 5rem;
   }
 
   /*image resizing for tablet*/
@@ -1092,9 +1080,13 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .user-flows h4, .user-testing h4, .personas h4,
-  .solution-forwardhealth h4, .user-interface h4{
+  .solution-forwardhealth h4, .user-interface h4, .strategy h4{
     margin-top: 0;
     padding-top: 9rem;
+  }
+
+  .strategy-img{
+    margin-left: 30rem;
   }
 
   .insights{
