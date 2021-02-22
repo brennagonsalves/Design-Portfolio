@@ -534,6 +534,17 @@ nav {
   cursor: pointer;
 }
 
+.other-work{
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.other-casestudy li{
+  display: inline;
+  cursor: pointer;
+  margin-right: 1.2rem;
+}
+
 .menu-casestudy li {
   display: inline;
   cursor: pointer;
@@ -553,11 +564,22 @@ nav {
   text-decoration: none;
 }
 
+.other-casestudy li a {
+  color: #8E8E90;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
 .menu li a:hover{
   color: #FEFEFE;
 }
 
 .menu-casestudy li a:hover{
+  color: #1D1E21;
+}
+
+.other-casestudy li a:hover{
   color: #1D1E21;
 }
 
@@ -731,6 +753,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 
   .menu-casestudy li {
     padding-left: 2rem;
+  }
+
+  .other-work{
+    margin-left: 18rem;
+    margin-top: 6rem;
   }
 
   /*project styling homepage tablet*/
@@ -1082,6 +1109,14 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   .roles p {
     margin: 0;
     padding-left: 30rem;
+  }
+
+  .other-work{
+    margin-left: 30rem;
+  }
+
+  .other-work li{
+    margin-right: 2rem;
   }
 
   .user-flows h4, .user-testing h4, .personas h4,
