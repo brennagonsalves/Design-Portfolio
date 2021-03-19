@@ -88,37 +88,39 @@ p {
   margin: 2rem 3rem 0 3rem;
 }
 
-ol {
-  color: #303240;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.8rem;
-  line-height: 2.9rem;
-  padding-left: 3rem;
-}
-
-ol li {
-  padding-top: 2rem;
-}
-
 /*project styling homepage mobile*/
 .introduction{
-  padding: 12rem 3rem 2rem 3rem;
+  padding: 8rem 3rem 2rem 3rem;
 }
 
 .introduction h1{
   color: #FEFEFE;
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 3.8rem;
   margin: 0;
   padding: 0;
 }
 
+.introduction p{
+  color: #FFFF;
+  margin: 3rem 0 0 0;
+}
+
+.introduction p a{
+  color: #FEFEFE;
+  text-decoration: underline;
+}
+
+.introduction p a:hover{
+  color: #8E8E90;
+}
+
 /*down chevron icon homepage mobile*/
 .introduction i{
   display: block;
   font-size: 2.8rem;
-  margin-top: 14rem;
+  margin-top: 8rem;
   text-align: center;
   width: 100%;
 }
@@ -1087,7 +1089,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .introduction i{
-    margin-top: 17rem;
+    margin-top: 10rem;
+  }
+
+  .introduction p{
+    margin-top: 5rem;
   }
 
   .container{
